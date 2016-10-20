@@ -1,0 +1,5 @@
+team\six\mastermind\server\MMServerApp.class
+team\six\mastermind\common\MMGame.class
+team\six\mastermind\common\MMPacket.class
+team\six\mastermind\server\MMServer.class
+team\six\mastermind\server\MMServerSession.class
