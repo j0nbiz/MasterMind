@@ -2,11 +2,7 @@ package team.six.mastermind.client;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.net.ServerSocket;
 import java.net.Socket;
-import java.nio.ByteBuffer;
-import java.util.Arrays;
-import java.util.List;
 import team.six.mastermind.common.MMPacket;
 
 /**
@@ -25,13 +21,13 @@ public class MMClient {
 
     public void sendStartReq() throws IOException {
         // Using 0 in all fields as start game request
-        for(byte comp: new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0).getBytes()){
+        for (byte comp : new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0).getBytes()) {
             out.write(comp); // Send all packet components to server
         }
     }
 
     public void sendGuess(MMPacket packet) throws IOException {
-        for(byte comp: packet.getBytes()){
+        for (byte comp : packet.getBytes()) {
             out.write(comp); // Send all packet components to server
         }
     }

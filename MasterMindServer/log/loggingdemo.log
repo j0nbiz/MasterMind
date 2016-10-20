@@ -1,0 +1,73 @@
+[INFO ] 2016-10-20 12:52:29.566 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-20 12:52:29.567 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:52:52.478 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:52:52.478 [main] MMServer - [>>>][>>>] Components: 0 0 0 0
+[INFO ] 2016-10-20 12:52:52.479 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:52:52.479 [main] MMServer - [>>>][>>>] Game created! (Answer = 1 1 7 5)
+[INFO ] 2016-10-20 12:52:52.479 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:52:52.480 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:52:52.482 [main] MMServer - [>>>][>>>] Components: 5 5 5 5
+[INFO ] 2016-10-20 12:52:52.482 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:52:52.482 [main] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-20 12:52:52.482 [main] MMServer - [>>>][>>>] Guess: 5 5 5 5 (Matches answer? false)
+[INFO ] 2016-10-20 12:55:04.084 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-20 12:55:04.085 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:55:13.559 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:55:13.559 [main] MMServer - [>>>][>>>] Components: 0 0 0 0
+[INFO ] 2016-10-20 12:55:13.559 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:55:13.560 [main] MMServer - [>>>][>>>] Game created! (Answer = 5 5 7 6)
+[INFO ] 2016-10-20 12:55:13.560 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:55:13.561 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:55:13.561 [main] MMServer - [>>>][>>>] Components: 5 5 5 5
+[INFO ] 2016-10-20 12:55:13.561 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:55:13.561 [main] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-20 12:55:13.561 [main] MMServer - [>>>][>>>] Guess: 5 5 5 5 (Matches answer? false)
+[INFO ] 2016-10-20 12:55:13.561 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:55:13.561 [main] MMServer - [>>>][>>>] Components: 2 4 6 7
+[INFO ] 2016-10-20 12:55:13.561 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:55:13.562 [main] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-20 12:55:13.562 [main] MMServer - [>>>][>>>] Guess: 2 4 6 7 (Matches answer? false)
+[INFO ] 2016-10-20 12:57:12.034 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-20 12:57:12.036 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:57:17.938 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:57:17.939 [main] MMServer - [>>>][>>>] Game created! (Answer = 6 7 4 6)
+[INFO ] 2016-10-20 12:57:17.939 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:57:17.939 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:57:17.939 [main] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-20 12:57:17.940 [main] MMServer - [>>>][>>>] Guess: 5 5 5 5 (Matches answer? false)
+[INFO ] 2016-10-20 12:57:17.940 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:57:17.940 [main] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-20 12:57:17.940 [main] MMServer - [>>>][>>>] Guess: 2 4 6 7 (Matches answer? false)
+[INFO ] 2016-10-20 12:58:13.085 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-20 12:58:13.086 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:58:21.186 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:58:21.187 [main] MMServer - [>>>][>>>] Game created! (Answer = 2 3 3 5)
+[INFO ] 2016-10-20 12:58:21.187 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:58:21.187 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:58:21.187 [main] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-20 12:58:21.187 [main] MMServer - [>>>][>>>] Guess: 5 5 5 5 (Matches answer? false)
+[INFO ] 2016-10-20 12:58:21.188 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:58:21.188 [main] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-20 12:58:21.188 [main] MMServer - [>>>][>>>] Guess: 2 4 6 7 (Matches answer? false)
+[INFO ] 2016-10-20 12:58:53.694 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-20 12:58:53.696 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:59:03.901 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:59:03.902 [main] MMServer - [>>>][>>>] Game created! (Answer = 5 5 3 7)
+[INFO ] 2016-10-20 12:59:03.902 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:59:03.903 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:59:03.903 [main] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-20 12:59:03.903 [main] MMServer - [>>>][>>>] Guess: 5 5 5 5 (Matches answer? false)
+[INFO ] 2016-10-20 12:59:03.903 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:59:03.903 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 12:59:03.903 [main] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-20 12:59:03.903 [main] MMServer - [>>>][>>>] Guess: 2 4 6 7 (Matches answer? false)
+[INFO ] 2016-10-20 12:59:03.903 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 12:59:56.544 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-20 12:59:56.546 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 13:00:02.673 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 13:00:02.674 [main] MMServer - [>>>][>>>] Game created! (Answer = 5 5 5 5)
+[INFO ] 2016-10-20 13:00:02.674 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-20 13:00:02.674 [main] MMServer - [>>>][>>>] Got new packet:
+[INFO ] 2016-10-20 13:00:02.674 [main] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-20 13:00:02.674 [main] MMServer - [>>>][>>>] Guess: 2 4 6 7 (Matches answer? true)
+[INFO ] 2016-10-20 13:00:02.674 [main] MMServer - [>>>][>>>] 
