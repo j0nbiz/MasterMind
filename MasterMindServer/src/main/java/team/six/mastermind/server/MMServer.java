@@ -12,9 +12,11 @@ import team.six.mastermind.common.MMPacket;
  * @author j0nbiz
  */
 public class MMServer {
-    private static final int BUFFSIZE = 4; // Packet holds 4 components
-
+    // Logger
     private final Logger log = LoggerFactory.getLogger(getClass().getName());
+    
+    // Net IO variables
+    private static final int BUFFSIZE = 4; // Packet holds 4 components
 
     private ServerSocket serverSocket;
 
@@ -22,8 +24,8 @@ public class MMServer {
     private int bytesRcvd;
     private int totalBytesRcvd = 0;
 
-    public MMServer(ServerSocket serversock) throws IOException {
-        this.serverSocket = serversock;
+    public MMServer() throws IOException {
+        this.serverSocket = new ServerSocket(50000);
 
         // Automaticaly start the server
         this.start();
@@ -71,8 +73,13 @@ public class MMServer {
                 } else if (game.getRound() != 10) {
                     // Interpret incoming packet
                     log.info("Round: " + game.getRound());
-                    log.info("Guess: " + packet.toString() + " (Matches answer? " + game.interpret(packet) + ")");
+                    log.info("Guess: " + packet.toString());
                     log.info("");
+                    
+                    //Send back interpretation
+                    for (byte comp : game.interpret(packet).getBytes()) {
+                        client.getOutputStream().write(comp); // Send all packet components to server
+                    }
                 } else {
                     log.info("Game over!");
                 }

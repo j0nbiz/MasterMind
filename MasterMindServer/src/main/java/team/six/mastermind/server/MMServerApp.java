@@ -11,6 +11,6 @@ public class MMServerApp {
 
     // Create a server instance
     public static void main(String[] args) throws IOException, InterruptedException {
-        MMServer server = new MMServer(new ServerSocket(50000));
+        MMServer server = new MMServer();
     }
 }

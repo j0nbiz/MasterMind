@@ -44,23 +44,7 @@ public class MMGame {
             return new MMPacket((byte) 1, (byte) 1, (byte) 1, (byte) 1);
         }
         
-        // byte array that will be used to populate returned MMPacket hint
-        // 0 being no peg, 1 being a white peg, 2 being a black peg
-        byte[] hints = new byte[]{0,  0,  0,  0};
-        
-        for(int i = 0; i < guess.getBytes().length; i++){
-            if(guess.getBytes()[i] == answer.getBytes()[i]){
-                hints[i] = 1;
-            }else{
-                for(int j = 0; i < answer.getBytes().length; i++){
-                    if(guess.getBytes()[i] == answer.getBytes()[j]){
-                        hints[i] = 2;
-                    }
-                }
-            }
-        }
-        
-        // TODO:
+        // TODO GAME LOGIC GOES HERE:
         // Assert color
         
         
