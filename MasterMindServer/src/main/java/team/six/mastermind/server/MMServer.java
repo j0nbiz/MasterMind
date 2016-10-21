@@ -32,6 +32,8 @@ public class MMServer {
     }
 
     public void start() throws IOException {
+        
+        
         log.info("Server initialized!");
         log.info("");
 
@@ -70,7 +72,7 @@ public class MMServer {
 
                     log.info("Game created! (Answer = " + game.getAnswer().toString() + ")");
                     log.info("");
-                } else if (game.getRound() != 10) {
+                } else if (game.getRound() <= 10) {
                     // Interpret incoming packet
                     log.info("Round: " + game.getRound());
                     log.info("Guess: " + packet.toString());
@@ -84,6 +86,7 @@ public class MMServer {
                     log.info("Game over!");
                 }
             }
+            // Reset buffer counter
             totalBytesRcvd = 0;
         }
     }

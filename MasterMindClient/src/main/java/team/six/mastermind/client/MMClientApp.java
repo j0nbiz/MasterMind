@@ -25,8 +25,11 @@ public class MMClientApp /*extends Application*/ {
     public static void main(String[] args) throws IOException {
         MMClient client = new MMClient(new Socket("localhost", 50000));
 
-        //client.sendStartReq();
-        client.sendGuess(new MMPacket((byte) 5, (byte) 5, (byte) 5, (byte) 5));
-        client.sendGuess(new MMPacket((byte) 2, (byte) 4, (byte) 6, (byte) 7));
+        // Game start request (Random answer)
+        client.sendPacket(new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0));
+        
+        // Test packet
+        client.sendPacket(new MMPacket((byte) 5, (byte) 5, (byte) 5, (byte) 5));
+        client.sendPacket(new MMPacket((byte) 2, (byte) 4, (byte) 6, (byte) 7));
     }
 }

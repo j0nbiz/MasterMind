@@ -5,6 +5,7 @@ import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
+import java.util.ArrayList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import team.six.mastermind.common.MMPacket;
@@ -18,7 +19,7 @@ public class MMClient {
     private final Logger log = LoggerFactory.getLogger(getClass().getName());
 
     // Server variables
-    private Socket mmServer;
+    private Socket server;
     OutputStream out;
     
     // Net IO variables
@@ -27,40 +28,52 @@ public class MMClient {
     private byte[] byteBuffer = new byte[BUFFSIZE];
     private int bytesRcvd;
     private int totalBytesRcvd = 0;
+    
+    // GUI elements
+    ArrayList<MMPacket> hints = new ArrayList<>();
 
     public MMClient(Socket mmServer) throws IOException {
-        this.mmServer = mmServer;
+        this.server = mmServer;
         this.out = mmServer.getOutputStream(); // Get target
     }
     
-    public void send(MMPacket packet) throws IOException{
+    public void sendPacket(MMPacket packet) throws IOException{     
+        // Logging
+        log.info("Sending to server...");
         
-        for (byte comp : new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0).getBytes()) {
-            out.write(comp); // Send all packet components to server
-        }
-        
-        while (totalBytesRcvd < byteBuffer.length) {
-            totalBytesRcvd += bytesRcvd;
-
-                
-        }
-        totalBytesRcvd = 0;
-    }
-
-    public void sendStartReq() throws IOException {
-        // Using 0 in all fields as start game request
-        for (byte comp : new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0).getBytes()) {
-            out.write(comp); // Send all packet components to server
-        }
-    }
-
-    public void sendGuess(MMPacket packet) throws IOException {
         for (byte comp : packet.getBytes()) {
             out.write(comp); // Send all packet components to server
         }
+        
+        // Create packet to get hint
+        MMPacket hint = new MMPacket();
+        
+        while (totalBytesRcvd < byteBuffer.length) {
+            // Check for server interupt and throw exception
+            if ((bytesRcvd = server.getInputStream().read(byteBuffer, totalBytesRcvd, byteBuffer.length - totalBytesRcvd)) == -1) {
+                throw new SocketException("Connection was interrupted!");
+            }
+            totalBytesRcvd += bytesRcvd;
+        }
+        // Reset buffer counter
+        totalBytesRcvd = 0;
+        
+        // Fill current packet
+        hint.decode(byteBuffer);
+        
+        // Add hint to hint list if not server message response (ex: new game)
+        if (!packet.equals(new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0))){
+            hints.add(hint);
+            
+            // Logging
+            log.info("Got new hint");
+            log.info("Hint: " + hint.toString());
+        }else{
+            log.info("Server request was read...");
+        } 
     }
 
     public void disconnect() throws IOException {
-        mmServer.close(); // Close server connection
+        server.close(); // Close server connection
     }
 }
