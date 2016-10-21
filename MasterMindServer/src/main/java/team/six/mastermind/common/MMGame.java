@@ -60,8 +60,9 @@ public class MMGame {
             }
         }
         
+        // TODO:
         // Assert color
-        if(guess.getBytes())
+        
         
         // Assert position
         
