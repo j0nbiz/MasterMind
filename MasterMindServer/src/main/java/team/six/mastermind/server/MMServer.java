@@ -78,12 +78,14 @@ public class MMServer {
                     log.info("Guess: " + packet.toString());
                     log.info("");
                     
-                    //Send back interpretation
-                    for (byte comp : game.interpret(packet).getBytes()) {
-                        client.getOutputStream().write(comp); // Send all packet components to server
-                    }
+                    
                 } else {
                     log.info("Game over!");
+                }
+                
+                //Send back interpretation
+                for (byte comp : game.interpret(packet).getBytes()) {
+                    client.getOutputStream().write(comp); // Send all packet components to server
                 }
             }
             // Reset buffer counter
