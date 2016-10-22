@@ -71,3 +71,5 @@
 [INFO ] 2016-10-20 13:00:02.674 [main] MMServer - [>>>][>>>] Round: 0
 [INFO ] 2016-10-20 13:00:02.674 [main] MMServer - [>>>][>>>] Guess: 2 4 6 7 (Matches answer? true)
 [INFO ] 2016-10-20 13:00:02.674 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-22 12:44:16.292 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-22 12:44:16.295 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 

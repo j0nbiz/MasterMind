@@ -1,5 +1,7 @@
 package team.six.mastermind.common;
 
+import java.util.Arrays;
+
 
 /**
  *
@@ -37,6 +39,13 @@ public class MMPacket {
         return components[0] + " " + components[1] + " " + components[2] + " " + components[3];
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 47 * hash + Arrays.hashCode(this.components);
+        return hash;
+    }
+    
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {

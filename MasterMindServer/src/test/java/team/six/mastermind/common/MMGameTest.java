@@ -40,6 +40,15 @@ public class MMGameTest {
 
     @Test
     public void getAnswerTest() {
-        MMGame game = new MMGame(new MMPacket((byte) 1, (byte) 2, (byte) 3, (byte) 4));
+        // Set Up
+        MMPacket test = new MMPacket((byte) 1, (byte) 2, (byte) 3, (byte) 4);
+        MMPacket result;
+        MMGame game = new MMGame(test);
+        
+        // Action
+        result = game.getAnswer();
+        
+        // Assert
+        assertEquals(test, result);
     }
 }
