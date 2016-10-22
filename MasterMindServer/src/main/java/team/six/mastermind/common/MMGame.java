@@ -60,9 +60,12 @@ public class MMGame {
 
     /**
      * This method verifies if the guess is the correct answer. It returns a
-     * response, which contains the hints, or 0 0 0 0 for a win. Hints: 0 is
-     * completely wrong 1 is correct color in correct position 2 is correct
-     * color in wrong position
+     * response, which contains the hints. For a win, hints will contain all 1.
+     * Hints Scheme: 
+     * 0 is completely wrong
+     * 1 is correct color in correct position
+     * 2 is correct color in wrong position
+     * 9 is end of game.
      *
      * @param guess The guess packet
      * @return The response packet
@@ -85,7 +88,13 @@ public class MMGame {
 
         // Check for good answer
         if (guess.equals(answer)) {
-            return new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0);
+            return new MMPacket((byte) 1, (byte) 1, (byte) 1, (byte) 1);
+        }
+        
+        // Check for end of game
+        if (round > 9)
+        {
+            return new MMPacket((byte) 9, (byte) 9, (byte) 9, (byte) 9);
         }
 
         // Get the total number of correct colors, ignoring if they are a
@@ -104,7 +113,7 @@ public class MMGame {
                 hints[i] = 2;
             } else {
                 // Will only fall here if some guesses were completely wrong
-                hints[i] = 3;
+                hints[i] = 0;
             }
         }
 
@@ -139,7 +148,7 @@ public class MMGame {
         int num = 0;
         byte[] tempAnswer = new byte[4];
         byte[] guessValues = guess.getBytes();
-        Boolean isAlreadyFound = false;
+        Boolean isAlreadyFound;
 
         // Deep copy of answer, do not want to change the initial values
         for (int i = 0; i < tempAnswer.length; i++) {
