@@ -76,7 +76,7 @@ public class MMGame {
         int correctColors;
         int matches;
 
-        // Verify that the answers are valid entries
+        // Verify that the guesses are valid entries
         for (int i = 0; i < guess.getBytes().length; i++) {
             if ((guess.getBytes()[i] < 1) || (guess.getBytes()[i] > 8)) {
                 throw new IllegalArgumentException("Invalid guess: " + guess.getBytes()[i]);
@@ -107,6 +107,7 @@ public class MMGame {
         // Add hints to hint array
         for (int i = 0; i < hints.length; i++) {
             if (i < matches) {
+                // Adding match hints
                 hints[i] = 1;
             } else if (i < correctColors) {
                 // Will only fall here if some correctColors guesses were not matches
