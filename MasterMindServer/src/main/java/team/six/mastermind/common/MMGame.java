@@ -14,8 +14,6 @@ public class MMGame {
 
     /**
      * Default constructor. Creates a game with a random answer.
-     *
-     * @throws IOException
      */
     public MMGame() {
         this.answer = seedAnswer();
@@ -34,7 +32,6 @@ public class MMGame {
      * This method creates a randomly generated answer for the game.
      *
      * @return The answer packet
-     * @throws IOException
      */
     private MMPacket seedAnswer() {
         Random ran = new Random();
@@ -69,7 +66,6 @@ public class MMGame {
      *
      * @param guess The guess packet
      * @return The response packet
-     * @throws IOException
      * @throws IllegalArgumentException
      */
     public MMPacket interpret(MMPacket guess) throws IllegalArgumentException {
@@ -84,13 +80,13 @@ public class MMGame {
             }
         }
 
+        // Increment round count on every guess, even if it is a good answer
+        round++;
+
         // Check for good answer
         if (guess.equals(answer)) {
             return new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0);
         }
-
-        // Increment round count on every guess
-        round++;
 
         // Get the total number of correct colors, ignoring if they are a
         // match or not
@@ -108,7 +104,7 @@ public class MMGame {
                 hints[i] = 2;
             } else {
                 // Will only fall here if some guesses were completely wrong
-                hints[i] = 0;
+                hints[i] = 3;
             }
         }
 
