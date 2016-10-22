@@ -33,20 +33,20 @@ public class MMGameInterpretParamTest {
                 new MMPacket((byte) 2, (byte) 2, (byte) 2, (byte) 2), 
                 new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0)},
             // All color hint
-            {new MMPacket((byte) 1, (byte) 2, (byte) 0, (byte) 4), 
-                new MMPacket((byte) 4, (byte) 1, (byte) 2, (byte) 0), 
+            {new MMPacket((byte) 1, (byte) 2, (byte) 3, (byte) 4), 
+                new MMPacket((byte) 4, (byte) 1, (byte) 2, (byte) 3), 
                 new MMPacket((byte) 2, (byte) 2, (byte) 2, (byte) 2)},
             // Three match hint
-            {new MMPacket((byte) 1, (byte) 2, (byte) 0, (byte) 4), 
-                new MMPacket((byte) 1, (byte) 2, (byte) 0, (byte) 5), 
+            {new MMPacket((byte) 1, (byte) 2, (byte) 3, (byte) 4), 
+                new MMPacket((byte) 1, (byte) 2, (byte) 3, (byte) 5), 
                 new MMPacket((byte) 1, (byte) 1, (byte) 1, (byte) 0)},
             // Half match, half color hint
-            {new MMPacket((byte) 1, (byte) 2, (byte) 0, (byte) 4), 
-                new MMPacket((byte) 1, (byte) 2, (byte) 4, (byte) 0), 
+            {new MMPacket((byte) 1, (byte) 2, (byte) 3, (byte) 4), 
+                new MMPacket((byte) 1, (byte) 2, (byte) 4, (byte) 3), 
                 new MMPacket((byte) 1, (byte) 1, (byte) 2, (byte) 2)},
             // Two match, one color and one wrong hint
-            {new MMPacket((byte) 1, (byte) 2, (byte) 0, (byte) 4), 
-                new MMPacket((byte) 1, (byte) 2, (byte) 5, (byte) 0), 
+            {new MMPacket((byte) 1, (byte) 2, (byte) 3, (byte) 4), 
+                new MMPacket((byte) 1, (byte) 2, (byte) 5, (byte) 3), 
                 new MMPacket((byte) 1, (byte) 1, (byte) 2, (byte) 0)},
             // Same colors answers match
             {new MMPacket((byte) 1, (byte) 1, (byte) 1, (byte) 1), 
@@ -54,16 +54,16 @@ public class MMGameInterpretParamTest {
                 new MMPacket((byte) 1, (byte) 0, (byte) 0, (byte) 0)},
             // Same colors answers color
             {new MMPacket((byte) 1, (byte) 2, (byte) 2, (byte) 2), 
-                new MMPacket((byte) 2, (byte) 0, (byte) 0, (byte) 0), 
+                new MMPacket((byte) 2, (byte) 3, (byte) 3, (byte) 3), 
                 new MMPacket((byte) 2, (byte) 0, (byte) 0, (byte) 0)},
             // Same colors guess color
             {new MMPacket((byte) 1, (byte) 2, (byte) 2, (byte) 2), 
-                new MMPacket((byte) 0, (byte) 0, (byte) 1, (byte) 1), 
+                new MMPacket((byte) 3, (byte) 3, (byte) 1, (byte) 1), 
                 new MMPacket((byte) 2, (byte) 0, (byte) 0, (byte) 0)},
             // Win
             {new MMPacket((byte) 1, (byte) 1, (byte) 1, (byte) 1), 
                 new MMPacket((byte) 1, (byte) 1, (byte) 1, (byte) 1), 
-                new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0)},
+                new MMPacket((byte) 1, (byte) 1, (byte) 1, (byte) 1)},
         });
     }
 
