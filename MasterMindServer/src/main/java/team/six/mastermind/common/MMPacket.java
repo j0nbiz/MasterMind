@@ -1,6 +1,5 @@
 package team.six.mastermind.common;
 
-import java.io.*;
 
 /**
  *
@@ -14,7 +13,7 @@ public class MMPacket {
     public MMPacket() {
     }
 
-    public MMPacket(byte comp1, byte comp2, byte comp3, byte comp4) throws IOException {
+    public MMPacket(byte comp1, byte comp2, byte comp3, byte comp4) {
         // Putting components into byte array
         components[0] = comp1;
         components[1] = comp2;
