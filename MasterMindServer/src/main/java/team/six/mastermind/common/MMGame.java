@@ -76,7 +76,7 @@ public class MMGame {
      */
     public MMPacket interpret(MMPacket guess) throws IOException {
         byte[] hints = new byte[4];
-        int colors;
+        int correctColors;
         int matches;        
 
         // Check for good answer
@@ -87,13 +87,34 @@ public class MMGame {
         // Increment round count on every guess
         round++;
         
-        // Get the number of correct colors
-        colors = getColors(guess);
+        // Get the total number of correct colors, ignoring if they are a
+        // match or not
+        correctColors = getColors(guess);
         
         // Get the number of correct matches
         matches = getMatches(guess);
         
-        // Assert position
+        // A match will also result in a correct color, removing overlap
+        //correctColors = correctColors - matches;
+        
+        // Add hints to hint array
+        for (int i = 0; i < hints.length; i++)
+        {
+            if (i < matches)
+            {
+                hints[i] = 1;
+            }
+            else if (i < correctColors)
+            {
+                // Will only fall here if some correctColors guesses were not matches
+                hints[i] = 2;
+            }
+            else
+            {
+                // Will only fall here if some guesses were completely wrong
+                hints[i] = 0;
+            }
+        }
         
         
         return new MMPacket(hints[0], hints[1], hints[2], hints[3]);
@@ -129,10 +150,37 @@ public class MMGame {
     private int getColors(MMPacket guess)
     {
         int num = 0;
-        byte[] tempAnswer = answer.getBytes();
+        byte[] tempAnswer = new byte[4];
+        byte[] guessValues = guess.getBytes();
+        Boolean isAlreadyFound = false;
         
-        // Loop through to verify if color is present
-        // change temp so not verify same color twice
+        // Deep copy of answer, do not want to change the initial values
+        for (int i = 0; i < tempAnswer.length; i++)
+        {
+            tempAnswer[i] = answer.getBytes()[i];
+        }
+        
+        for (int i = 0; i < guessValues.length; i ++)
+        {
+            // New guess starting
+            isAlreadyFound = false;
+            
+            // For each guess, verify if the color is present
+            for (int j = 0; j < tempAnswer.length; j++)
+            {
+                if ((guessValues[i] == tempAnswer[j]) && (!isAlreadyFound))
+                {
+                    // Don't check tempAnswer for same color (if it appears twice)
+                    isAlreadyFound = true;
+                    
+                    // Guesses don't overlap on same color (if guess has color that appears twice)
+                    tempAnswer[j] = -1;
+                    
+                    // Add to the count
+                    num++;
+                }
+            }
+        }
         
         return num;
     }
