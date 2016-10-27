@@ -164,6 +164,8 @@ public class FXMLMastermindController implements Initializable {
         loader.setController(cont);
         Scene howToScene = new Scene(root);
         
+        howToStage.setTitle("How To Play");
+        howToStage.resizableProperty().set(false);
         howToStage.setScene(howToScene);
         howToStage.show();
     }
@@ -181,7 +183,9 @@ public class FXMLMastermindController implements Initializable {
         cont.setContext(aboutStage);
         loader.setController(cont);
         Scene aboutScene = new Scene(root);
-        
+                
+        aboutStage.setTitle("About");
+        aboutStage.resizableProperty().set(false);
         aboutStage.setScene(aboutScene);
         aboutStage.show();
     }

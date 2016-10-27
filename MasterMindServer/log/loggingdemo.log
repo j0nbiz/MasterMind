@@ -387,3 +387,28 @@
 [INFO ] 2016-10-27 15:48:37.108 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
 [INFO ] 2016-10-27 15:48:58.825 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
 [INFO ] 2016-10-27 15:48:58.825 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 16:00:41.922 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 16:00:41.924 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 16:00:41.924 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 16:00:54.876 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 16:00:54.876 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 16:03:26.004 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 16:03:26.007 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 16:03:26.007 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 16:03:36.308 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 16:03:36.309 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 16:04:36.248 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 16:04:36.250 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 16:04:36.251 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 16:04:48.961 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 16:04:48.961 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 16:05:47.266 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 16:05:47.269 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 16:05:47.269 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 16:06:00.191 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 16:06:00.191 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 16:08:43.555 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 16:08:43.558 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 16:08:43.558 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 16:08:52.316 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 16:08:52.317 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
