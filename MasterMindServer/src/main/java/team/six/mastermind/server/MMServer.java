@@ -35,10 +35,13 @@ public class MMServer {
         
         
         log.info("Server initialized!");
+        log.info("Address: " + InetAddress.getLocalHost().getHostAddress());
         log.info("");
-
+        
         // Block here until connection is made with client
         Socket client = serverSocket.accept();
+        log.info("Client connected! Address: " + client.getInetAddress().getHostAddress());
+        log.info("");
 
         // Create packet to interpret response
         MMPacket packet = new MMPacket();
@@ -53,43 +56,37 @@ public class MMServer {
                     throw new SocketException("Connection was interrupted!");
                 }
                 totalBytesRcvd += bytesRcvd;
-
-                // Fill current packet
-                packet.decode(byteBuffer);
-
-                // Logging
-                log.info("Got new packet:");
-
-                // Interpret packets
-                if (game == null) {
-                    if (packet.equals(new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0))) {
-                        // New game with random answer
-                        game = new MMGame();
-                    } else {
-                        // New game with specified answer
-                        game = new MMGame(packet);
-                    }
-
-                    log.info("Game created! (Answer = " + game.getAnswer().toString() + ")");
-                    log.info("");
-                } else if (game.getRound() <= 10) {
-                    // Interpret incoming packet
-                    log.info("Round: " + game.getRound());
-                    log.info("Guess: " + packet.toString());
-                    log.info("");
-                    
-                    
-                } else {
-                    log.info("Game over!");
-                }
+            }
+            totalBytesRcvd = 0; // Reset buffer counter
                 
+            // Fill current packet
+            packet.decode(byteBuffer);
+
+            // Interpret packets
+            if (game == null) {
+                if (packet.equals(new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0))) {
+                    // New game with random answer
+                    game = new MMGame();
+                } else {
+                    // New game with specified answer
+                    game = new MMGame(packet);
+                }
+
+                log.info("Game created! (Answer = " + game.getAnswer().toString() + ")");
+                log.info("");
+            } else if (game.getRound() > 0) {
+                // Interpret incoming packet
+                log.info("Round: " + game.getRound());
+                log.info("Guess: " + packet.toString());
+                log.info("");
+
                 //Send back interpretation
                 for (byte comp : game.interpret(packet).getBytes()) {
                     client.getOutputStream().write(comp); // Send all packet components to server
                 }
+            } if(game.getRound() == 10) {
+                log.info("Game over!");
             }
-            // Reset buffer counter
-            totalBytesRcvd = 0;
         }
     }
 }

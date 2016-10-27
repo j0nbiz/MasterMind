@@ -38,9 +38,6 @@ public class MMClient {
     }
     
     public void sendPacket(MMPacket packet) throws IOException{     
-        // Logging
-        log.info("Sending to server...");
-        
         for (byte comp : packet.getBytes()) {
             out.write(comp); // Send all packet components to server
         }

@@ -1,4 +1,3 @@
-team\six\mastermind\client\MMClientApp.class
 team\six\mastermind\common\MMPacket.class
-team\six\mastermind\client\FXMLController.class
 team\six\mastermind\client\MMClient.class
+team\six\mastermind\common\MMConfig.class
