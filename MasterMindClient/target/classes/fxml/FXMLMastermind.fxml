@@ -52,6 +52,26 @@
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onChangeColor" text="0" GridPane.columnIndex="2" />
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onChangeColor" text="0" GridPane.columnIndex="3" />
             <Label fx:id="out_answer" text="Answer" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <GridPane gridLinesVisible="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="4">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" percentWidth="25.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" percentWidth="25.0" />
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="25.0" />
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="25.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+               <children>
+                  <Button disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onChangeColor" text="0" underline="true" />
+                  <Button disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onChangeColor" text="0" underline="true" GridPane.columnIndex="1" />
+                  <Button disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onChangeColor" text="0" underline="true" GridPane.columnIndex="2" />
+                  <Button disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onChangeColor" text="0" underline="true" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
          </children>
          <GridPane.margin>
             <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
@@ -61,10 +81,10 @@
          <GridPane.margin>
             <Insets left="20.0" right="20.0" />
          </GridPane.margin></Button>
-      <GridPane GridPane.rowIndex="13">
+      <GridPane hgap="20.0" GridPane.columnSpan="2" GridPane.rowIndex="13">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" percentWidth="50.0" />
+          <ColumnConstraints hgrow="SOMETIMES" percentWidth="50.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />

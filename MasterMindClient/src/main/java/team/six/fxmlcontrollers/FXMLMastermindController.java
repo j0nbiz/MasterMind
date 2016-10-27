@@ -72,6 +72,9 @@ public class FXMLMastermindController implements Initializable {
         out_answer.setText("Answer (Random)");
         out_host.setText(conf.getHostProperty().get());
         
+        // Hide hint field
+        row1.getChildren().get(5).setVisible(false);
+        
         // Create a new connection
         client = new MMClient(new Socket(conf.getHostProperty().get(), 50000));
     }
@@ -113,7 +116,10 @@ public class FXMLMastermindController implements Initializable {
             MMPacket hint = client.sendPacket(new MMPacket((byte) Integer.parseInt(comp1.getText()), (byte) Integer.parseInt(comp2.getText()), (byte) Integer.parseInt(comp3.getText()), (byte) Integer.parseInt(comp4.getText())));
             
             // Hide answer label
-            row1.getChildren().remove(out_answer);
+            row1.getChildren().get(4).setVisible(false);
+            
+            // Reveal hint field
+            row1.getChildren().get(5).setVisible(true);
         }
     }
 

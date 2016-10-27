@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="team.six.mastermind.common.MMGameInterpretParamTest" time="0.045" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="team.six.mastermind.common.MMGameInterpretParamTest" time="0.041" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin"/>
@@ -65,7 +65,7 @@
   <testcase name="interpretTest[2]" classname="team.six.mastermind.common.MMGameInterpretParamTest" time="0"/>
   <testcase name="interpretTest[3]" classname="team.six.mastermind.common.MMGameInterpretParamTest" time="0"/>
   <testcase name="interpretTest[4]" classname="team.six.mastermind.common.MMGameInterpretParamTest" time="0"/>
-  <testcase name="interpretTest[5]" classname="team.six.mastermind.common.MMGameInterpretParamTest" time="0"/>
+  <testcase name="interpretTest[5]" classname="team.six.mastermind.common.MMGameInterpretParamTest" time="0.001"/>
   <testcase name="interpretTest[6]" classname="team.six.mastermind.common.MMGameInterpretParamTest" time="0"/>
   <testcase name="interpretTest[7]" classname="team.six.mastermind.common.MMGameInterpretParamTest" time="0"/>
   <testcase name="interpretTest[8]" classname="team.six.mastermind.common.MMGameInterpretParamTest" time="0"/>

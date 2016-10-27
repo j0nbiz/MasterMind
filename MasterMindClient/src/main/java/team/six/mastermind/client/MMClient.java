@@ -40,21 +40,17 @@ public class MMClient {
     public MMPacket sendPacket(MMPacket packet) throws IOException{     
         for (byte comp : packet.getBytes()) {
             out.write(comp); // Send all packet components to server
-            log.info("Loop 2");
         }
         
         // Create packet to get hint
         MMPacket hint = new MMPacket();
         
         while (totalBytesRcvd < byteBuffer.length) {
-            log.info("Loop 1");
             // Check for server interupt and throw exception
             if ((bytesRcvd = server.getInputStream().read(byteBuffer, totalBytesRcvd, byteBuffer.length - totalBytesRcvd)) == -1) {
                 throw new SocketException("Connection was interrupted!");
             }
             totalBytesRcvd += bytesRcvd;
-            
-            log.info("Loop 1");
         }
         // Reset buffer counter
         totalBytesRcvd = 0;
