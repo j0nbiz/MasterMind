@@ -15,7 +15,9 @@ import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -134,5 +136,53 @@ public class FXMLMastermindController implements Initializable {
         if(round == 1){
             
         }
+    }
+    
+    @FXML
+    void onNewGame(ActionEvent event)
+    {
+        // Start a new game, clear board
+    }
+    
+    @FXML
+    void onEndGame(ActionEvent event)
+    {
+        // retrieves answer and displays it, disable game board
+    }
+    
+    @FXML
+    void onHowTo(ActionEvent event) throws IOException
+    {
+        Stage howToStage = new Stage();
+        
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/FXMLHowTo.fxml"));
+        loader.setResources(ResourceBundle.getBundle("MessagesBundle"));
+        
+        GridPane root = (GridPane) loader.load();
+        FXMLHowToController cont = loader.getController();
+        cont.setContext(howToStage);
+        loader.setController(cont);
+        Scene howToScene = new Scene(root);
+        
+        howToStage.setScene(howToScene);
+        howToStage.show();
+    }
+    
+    @FXML
+    void onAbout(ActionEvent event) throws IOException
+    {
+        Stage aboutStage = new Stage();
+        
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/FXMLAbout.fxml"));
+        loader.setResources(ResourceBundle.getBundle("MessagesBundle"));
+        
+        GridPane root = (GridPane) loader.load();
+        FXMLAboutController cont = loader.getController();
+        cont.setContext(aboutStage);
+        loader.setController(cont);
+        Scene aboutScene = new Scene(root);
+        
+        aboutStage.setScene(aboutScene);
+        aboutStage.show();
     }
 }

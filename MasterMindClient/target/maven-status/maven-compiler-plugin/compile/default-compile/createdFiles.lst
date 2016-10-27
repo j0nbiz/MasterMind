@@ -1,6 +1,8 @@
 team\six\mastermind\client\MMClientApp.class
 team\six\fxmlcontrollers\FXMLConnectController.class
-team\six\mastermind\common\MMPacket.class
 team\six\fxmlcontrollers\FXMLMastermindController.class
 team\six\mastermind\client\MMClient.class
 team\six\mastermind\common\MMConfig.class
+team\six\fxmlcontrollers\FXMLHowToController.class
+team\six\mastermind\common\MMPacket.class
+team\six\fxmlcontrollers\FXMLAboutController.class

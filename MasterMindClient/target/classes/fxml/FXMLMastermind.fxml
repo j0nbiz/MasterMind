@@ -125,14 +125,14 @@
         <menus>
           <Menu mnemonicParsing="false" text="%play_menu">
             <items>
-              <MenuItem mnemonicParsing="false" text="%new_game" />
-                <MenuItem mnemonicParsing="false" text="%end_game" />
+              <MenuItem mnemonicParsing="false" onAction="#onNewGame" text="%new_game" />
+                <MenuItem mnemonicParsing="false" onAction="#onEndGame" text="%end_game" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="%help_menu">
             <items>
-                  <MenuItem mnemonicParsing="false" text="%how_to" />
-              <MenuItem mnemonicParsing="false" text="%about" />
+                  <MenuItem mnemonicParsing="false" onAction="#onHowTo" text="%how_to" />
+              <MenuItem mnemonicParsing="false" onAction="#onAbout" text="%about" />
             </items>
           </Menu>
         </menus>
