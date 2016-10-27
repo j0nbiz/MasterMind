@@ -109,7 +109,11 @@ public class FXMLMastermindController implements Initializable {
             Button comp3 = (Button) row1.getChildren().get(2);
             Button comp4 = (Button) row1.getChildren().get(3);
             
-            client.sendPacket(new MMPacket((byte) Integer.parseInt(comp1.getText()), (byte) Integer.parseInt(comp2.getText()), (byte) Integer.parseInt(comp3.getText()), (byte) Integer.parseInt(comp4.getText())));
+            // Send packet and receive hint (discard hint since it is request)
+            MMPacket hint = client.sendPacket(new MMPacket((byte) Integer.parseInt(comp1.getText()), (byte) Integer.parseInt(comp2.getText()), (byte) Integer.parseInt(comp3.getText()), (byte) Integer.parseInt(comp4.getText())));
+            
+            // Hide answer label
+            row1.getChildren().remove(out_answer);
         }
     }
 

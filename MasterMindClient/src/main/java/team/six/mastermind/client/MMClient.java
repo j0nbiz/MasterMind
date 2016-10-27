@@ -37,20 +37,24 @@ public class MMClient {
         this.out = mmServer.getOutputStream(); // Get target
     }
     
-    public void sendPacket(MMPacket packet) throws IOException{     
+    public MMPacket sendPacket(MMPacket packet) throws IOException{     
         for (byte comp : packet.getBytes()) {
             out.write(comp); // Send all packet components to server
+            log.info("Loop 2");
         }
         
         // Create packet to get hint
         MMPacket hint = new MMPacket();
         
         while (totalBytesRcvd < byteBuffer.length) {
+            log.info("Loop 1");
             // Check for server interupt and throw exception
             if ((bytesRcvd = server.getInputStream().read(byteBuffer, totalBytesRcvd, byteBuffer.length - totalBytesRcvd)) == -1) {
                 throw new SocketException("Connection was interrupted!");
             }
             totalBytesRcvd += bytesRcvd;
+            
+            log.info("Loop 1");
         }
         // Reset buffer counter
         totalBytesRcvd = 0;
@@ -59,7 +63,7 @@ public class MMClient {
         hint.decode(byteBuffer);
         
         // Add hint to hint list if not server message response (ex: new game)
-        if (!packet.equals(new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0))){
+        /*if (!packet.equals(new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0))){
             hints.add(hint);
             
             // Logging
@@ -67,7 +71,9 @@ public class MMClient {
             log.info("Hint: " + hint.toString());
         }else{
             log.info("Server request was read...");
-        } 
+        }*/
+        
+        return hint;
     }
 
     public void disconnect() throws IOException {

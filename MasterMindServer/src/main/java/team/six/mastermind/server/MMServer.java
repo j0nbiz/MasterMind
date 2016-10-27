@@ -74,6 +74,12 @@ public class MMServer {
 
                 log.info("Game created! (Answer = " + game.getAnswer().toString() + ")");
                 log.info("");
+                
+                // Send back succes request and allow client loop to continue
+                for (byte comp : new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0).getBytes()) {
+                    client.getOutputStream().write(comp); // Send all packet components to client
+                }
+                
             } else if (game.getRound() > 0) {
                 // Interpret incoming packet
                 log.info("Round: " + game.getRound());
@@ -82,8 +88,9 @@ public class MMServer {
 
                 //Send back interpretation
                 for (byte comp : game.interpret(packet).getBytes()) {
-                    client.getOutputStream().write(comp); // Send all packet components to server
+                    client.getOutputStream().write(comp); // Send all packet components to client
                 }
+                
             } if(game.getRound() == 10) {
                 log.info("Game over!");
             }
