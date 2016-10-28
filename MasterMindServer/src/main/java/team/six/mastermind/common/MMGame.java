@@ -90,7 +90,6 @@ public class MMGame {
 
         // Check for good answer
         if (guess.equals(answer)) {
-            log.info("MMGame: winning combination " + guess.toString());
             return new MMPacket((byte) 1, (byte) 1, (byte) 1, (byte) 1);
         }
 
@@ -119,7 +118,6 @@ public class MMGame {
                 hints[i] = 0;
             }
         }
-        log.info("MMGame: giving hint " + hints[0] + hints[1] + hints[2] + hints[3]);
         return new MMPacket(hints[0], hints[1], hints[2], hints[3]);
     }
 
