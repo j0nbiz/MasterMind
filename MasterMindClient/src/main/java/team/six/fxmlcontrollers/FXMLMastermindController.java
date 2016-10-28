@@ -22,6 +22,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import team.six.mastermind.client.MMClient;
 import team.six.mastermind.client.MMClientApp;
@@ -84,6 +85,9 @@ public class FXMLMastermindController implements Initializable {
     @FXML
     private Label out_host;
     
+    @FXML
+    private Label out_result;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // Loaded
@@ -101,6 +105,9 @@ public class FXMLMastermindController implements Initializable {
         // Setup here because method runs AFTER initialize and would be binded to old object
         out_guess.setText("Start game! Answer (Random)");
         out_host.setText(conf.getHostProperty().get());
+        
+        // Hide game result label
+        out_result.setVisible(false);
         
         // Hide hint field of row 1
         getRow(1).getChildren().get(4).setVisible(false);
@@ -185,6 +192,27 @@ public class FXMLMastermindController implements Initializable {
                 // Set components in row
                 setRowGuess(getRow(11), lastGuess); // Set the winning guess on last row
                 setRowHint(getRow(11), hint); // Hint should always be 1111 since win condition
+                
+                // Show game result label
+                out_result.setVisible(true);
+                out_result.setText("W");
+                out_result.setTextFill(Color.web("#00ff00"));
+            }else if(round == 10){
+                // Lock current row and display last row with win
+                lockRow(getRow(round));
+                
+                // Reveal last row
+                revealRowContent(getRow(11));
+                lockRow(getRow(11));
+                
+                // Set components in row
+                setRowGuess(getRow(11), lastGuess); // Set the winning guess on last row
+                setRowHint(getRow(11), hint); // Hint should always be 1111 since win condition
+                
+                // Show game result label
+                out_result.setVisible(true);
+                out_result.setText("L");
+                out_result.setTextFill(Color.web("#ff0000"));
             }else{
                 nextRound();
             }
