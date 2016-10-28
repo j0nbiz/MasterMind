@@ -20,7 +20,8 @@ public class MMServer {
     private static final int BUFFSIZE = 4; // Packet holds 4 components
 
     private ServerSocket serverSocket;
-
+    private Socket client;
+    
     private byte[] byteBuffer = new byte[BUFFSIZE];
     private int bytesRcvd;
     private int totalBytesRcvd = 0;
@@ -33,14 +34,12 @@ public class MMServer {
     }
 
     public void start() throws IOException {
-        
-        
         log.info("Server initialized!");
         log.info("Address: " + InetAddress.getLocalHost().getHostAddress());
         log.info("");
         
         // Block here until connection is made with client
-        Socket client = serverSocket.accept();
+        client = serverSocket.accept();
         log.info("Client connected! Address: " + client.getInetAddress().getHostAddress());
         log.info("");
 
@@ -51,24 +50,30 @@ public class MMServer {
         MMGame game = null;
 
         for (;;) {
-            while (totalBytesRcvd < byteBuffer.length) {
-                // Check for client disconnection and throw exception
-                if ((bytesRcvd = client.getInputStream().read(byteBuffer, totalBytesRcvd, byteBuffer.length - totalBytesRcvd)) == -1) {
-                    throw new SocketException("Connection was interrupted!");
-                }
-                totalBytesRcvd += bytesRcvd;
-            }
-            totalBytesRcvd = 0; // Reset buffer counter
+            try{
+                receivePackets();
+            }catch(SocketException e){
+                client.close(); // Close old client
+
+                log.info("Client connection interupted! Waiting for new client...");
+                log.info("");
+
+                client = serverSocket.accept(); // Accept new client
+
+                game = null; // Unset game to fall into if statement
+
+                log.info("Client connected! Address: " + client.getInetAddress().getHostAddress());
+                log.info("");
                 
+                totalBytesRcvd = 0; // Reset buffer to accept new packet in case connection was lost before all 4 bytes received
+                
+                receivePackets(); // Receive new packets
+            }
+            
             // Fill current packet
             packet.decode(byteBuffer);
-
             
-
             // Interpret packets
-            
-            
-            
             if (game == null) {
                 if (packet.equals(new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0))) {
                     // New game with random answer
@@ -116,5 +121,16 @@ public class MMServer {
                 log.info("");
             }
         }
+    }
+    
+    public void receivePackets() throws SocketException, IOException{
+        while (totalBytesRcvd < byteBuffer.length) {
+            // Check for client disconnection and throw exception
+            if ((bytesRcvd = client.getInputStream().read(byteBuffer, totalBytesRcvd, byteBuffer.length - totalBytesRcvd)) == -1) {
+                throw new SocketException("Connection lost!");
+            }
+            totalBytesRcvd += bytesRcvd;
+        }
+        totalBytesRcvd = 0; // Reset buffer counter
     }
 }

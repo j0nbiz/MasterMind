@@ -1,11 +1,5 @@
 package team.six.fxmlcontrollers;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import java.io.IOException;
 import java.net.Socket;
 import java.net.URL;
@@ -132,19 +126,35 @@ public class FXMLMastermindController implements Initializable {
         
         // If setting the answer
         if(round == 0){
-            // Get current components
-            Button comp1 = (Button) row1.getChildren().get(0);
-            Button comp2 = (Button) row1.getChildren().get(1);
-            Button comp3 = (Button) row1.getChildren().get(2);
-            Button comp4 = (Button) row1.getChildren().get(3);
+            boolean rand = true;
+            for(Button btn: getRowButtons(getRow(1))){
+                if(Integer.parseInt(btn.getText()) != 0){
+                    rand = false;
+                } 
+            }
             
-            if(Integer.parseInt(comp1.getText()) == 0 &&
-               Integer.parseInt(comp2.getText()) == 0 &&
-               Integer.parseInt(comp3.getText()) == 0 &&
-               Integer.parseInt(comp4.getText()) == 0){
-                out_guess.setText("Start game! Answer (Random)");
+            // Set label
+            if(rand){
+                out_guess.setText("Start game! Answer (Random)"); // Announce random game answer
             }else{
-                out_guess.setText("Start game! Answer (Custom)");
+                out_guess.setText("Start game! Answer (Custom)"); // Announce random game answer
+            }
+        }else{
+            // Make sure all fields are set before sending guess on first round (should be set automatically after)
+            boolean set = true;            
+            for(Button btn: getRowButtons(getRow(1))){
+                if(Objects.equals(btn.getText(), "") || Integer.parseInt(btn.getText()) == 0){
+                    set = false;
+                } 
+            }
+            
+            // Set label
+            if(!set){
+                out_guess.disableProperty().set(true);
+                out_guess.setText("Please assign a number to all fields!"); // Announce random game answer
+            }else{
+                out_guess.disableProperty().set(false);
+                out_guess.setText("Did I get it right?"); // Announce random game answer
             }
         }
     }
@@ -167,22 +177,19 @@ public class FXMLMastermindController implements Initializable {
             // Hide zero button because we arent supposed to actually use it
             in_zero.setVisible(false);
             
-            // Set button text to nothing in order to force client to use correct values
-            ((Button) getRow(1).getChildren().get(0)).setText("");
-            ((Button) getRow(1).getChildren().get(1)).setText("");
-            ((Button) getRow(1).getChildren().get(2)).setText("");
-            ((Button) getRow(1).getChildren().get(3)).setText("");
+            // Set button text to nothing in order to force client to use correct values           
+            for(Button btn: getRowButtons(getRow(1))){
+                btn.setText("");
+            }
+            
+            // Prepare to receive first guess
+            out_guess.disableProperty().set(true);
+            out_guess.setText("Please assign a number to all fields!"); // Announce random game answer
             
             // Increment round
             nextRound();
         }else{
-            // Get row according to round being played
-            // Get current components
-            Button comp1 = (Button) getRow(round).getChildren().get(0);
-            Button comp2 = (Button) getRow(round).getChildren().get(1);
-            Button comp3 = (Button) getRow(round).getChildren().get(2);
-            Button comp4 = (Button) getRow(round).getChildren().get(3);
-            
+            // Create new guess accoring to row buttons
             MMPacket guess = getRowPacket(getRow(round));
             
             lastGuess = guess; // Set last guess to current to put into next row
@@ -207,13 +214,7 @@ public class FXMLMastermindController implements Initializable {
                 setRowHint(getRow(11), lastGuess); // Set answer since it 1111
                 
                 // Show game result label
-                out_result.setVisible(true);
-                out_result.setText("W");
-                out_result.setTextFill(Color.web("#00ff00"));
-                
-                // Disable guess button
-                out_guess.disableProperty().set(true);
-                out_guess.setText("Game over!");
+                gameResult(true);
             }else if(round == 10){
                 // Since client lost, request answer from server
                 hint = client.sendPacket(new MMPacket((byte) 9, (byte) 9, (byte) 9, (byte) 9));
@@ -230,16 +231,28 @@ public class FXMLMastermindController implements Initializable {
                 setRowHint(getRow(11), hint); // Hint should always be 1111 since win condition
                 
                 // Show game result label
-                out_result.setVisible(true);
-                out_result.setText("L");
-                out_result.setTextFill(Color.web("#ff0000"));
-                
-                out_guess.disableProperty().set(true);
-                out_guess.setText("Game over!");
+                gameResult(false);
             }else{
                 nextRound();
             }
         }
+    }
+    
+    public void gameResult(boolean result){
+        out_result.setVisible(true);
+        
+        if(result){
+            // Win
+            out_result.setText("W");
+            out_result.setTextFill(Color.web("#00ff00"));
+        }else{
+            // Loss
+            out_result.setText("L");
+            out_result.setTextFill(Color.web("#ff0000"));
+        }
+        
+        out_guess.disableProperty().set(true);
+        out_guess.setText("Game over!");
     }
 
     @FXML
@@ -275,16 +288,11 @@ public class FXMLMastermindController implements Initializable {
     }
     
     public MMPacket getRowPacket(GridPane row) throws IOException{
-        // Get current components
-        Button comp1 = (Button) row.getChildren().get(0);
-        Button comp2 = (Button) row.getChildren().get(1);
-        Button comp3 = (Button) row.getChildren().get(2);
-        Button comp4 = (Button) row.getChildren().get(3);
-
-        return new MMPacket((byte) Integer.parseInt(comp1.getText()),
-                            (byte) Integer.parseInt(comp2.getText()),
-                            (byte) Integer.parseInt(comp3.getText()),
-                            (byte) Integer.parseInt(comp4.getText()));
+        // Return packet according to row fields
+        return new MMPacket((byte) Integer.parseInt(getRowButtons(row)[0].getText()),
+                            (byte) Integer.parseInt(getRowButtons(row)[0].getText()),
+                            (byte) Integer.parseInt(getRowButtons(row)[0].getText()),
+                            (byte) Integer.parseInt(getRowButtons(row)[0].getText()));
     }
     
     public void setRowHint(GridPane row, MMPacket hint){
@@ -293,11 +301,16 @@ public class FXMLMastermindController implements Initializable {
         Button comp2 = (Button) ((GridPane) row.getChildren().get(4)).getChildren().get(1);
         Button comp3 = (Button) ((GridPane) row.getChildren().get(4)).getChildren().get(2);
         Button comp4 = (Button) ((GridPane) row.getChildren().get(4)).getChildren().get(3);
+
+        for(int i = 0; i < 4; i++){
+            getRowHintButtons(row)[i].setText(String.valueOf(hint.getBytes()[i]));
+        }
         
+        /*
         comp1.setText(String.valueOf(hint.getBytes()[0]));
         comp2.setText(String.valueOf(hint.getBytes()[1]));
         comp3.setText(String.valueOf(hint.getBytes()[2]));
-        comp4.setText(String.valueOf(hint.getBytes()[3]));
+        comp4.setText(String.valueOf(hint.getBytes()[3]));*/
     }
     
     public void setRowGuess(GridPane row, MMPacket guess){
@@ -306,10 +319,15 @@ public class FXMLMastermindController implements Initializable {
         Button comp3 = (Button) row.getChildren().get(2);
         Button comp4 = (Button) row.getChildren().get(3);
         
+        for(int i = 0; i < 4; i++){
+            getRowButtons(row)[i].setText(String.valueOf(guess.getBytes()[i]));
+        }
+        
+        /*
         comp1.setText(String.valueOf(guess.getBytes()[0]));
         comp2.setText(String.valueOf(guess.getBytes()[1]));
         comp3.setText(String.valueOf(guess.getBytes()[2]));
-        comp4.setText(String.valueOf(guess.getBytes()[3]));
+        comp4.setText(String.valueOf(guess.getBytes()[3]));*/
     }
     
     public GridPane getRow(int id){
@@ -339,6 +357,25 @@ public class FXMLMastermindController implements Initializable {
             default:
                 return null;
         }
+    }
+    
+    public Button[] getRowButtons(GridPane row){
+        // Get buttons in row and add to array
+        Button btn1 = (Button) row.getChildren().get(0);
+        Button btn2 = (Button) row.getChildren().get(1);
+        Button btn3 = (Button) row.getChildren().get(2);
+        Button btn4 = (Button) row.getChildren().get(3);
+        
+        return new Button[]{btn1, btn2, btn3, btn4};
+    }
+    
+    public Button[] getRowHintButtons(GridPane row){
+        Button btn1 = (Button) ((GridPane) row.getChildren().get(4)).getChildren().get(0);
+        Button btn2 = (Button) ((GridPane) row.getChildren().get(4)).getChildren().get(1);
+        Button btn3 = (Button) ((GridPane) row.getChildren().get(4)).getChildren().get(2);
+        Button btn4 = (Button) ((GridPane) row.getChildren().get(4)).getChildren().get(3);
+        
+        return new Button[]{btn1, btn2, btn3, btn4};
     }
     
     public void nextRound(){
