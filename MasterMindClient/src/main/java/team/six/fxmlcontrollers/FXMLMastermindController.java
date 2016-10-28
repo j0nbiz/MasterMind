@@ -322,7 +322,7 @@ public class FXMLMastermindController implements Initializable {
         round++;
 
         // Prevent user from pressing guess button when game is over
-        if(round == 10){
+        if(round == 11){
             out_guess.disableProperty().set(true);
             out_guess.setText("Game over!");
         }
