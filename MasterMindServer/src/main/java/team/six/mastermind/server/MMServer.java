@@ -8,8 +8,9 @@ import team.six.mastermind.common.MMGame;
 import team.six.mastermind.common.MMPacket;
 
 /**
- *
- * @author j0nbiz
+ * 
+ * 
+ * @author Jonathan Bizier
  */
 public class MMServer {
     // Logger

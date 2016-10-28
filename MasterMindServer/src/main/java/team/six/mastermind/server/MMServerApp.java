@@ -1,11 +1,11 @@
 package team.six.mastermind.server;
 
 import java.io.IOException;
-import java.net.ServerSocket;
 
 /**
- *
- * @author j0nbiz
+ * This app starts the MMServer.
+ * 
+ * @author Jonathan Bizier
  */
 public class MMServerApp {
 

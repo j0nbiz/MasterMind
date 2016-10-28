@@ -2230,3 +2230,329 @@
 [INFO ] 2016-10-28 00:00:43.958 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
 [INFO ] 2016-10-28 00:00:43.958 [main] MMServer - [>>>][>>>] Returning hint: 2 0 0 0
 [INFO ] 2016-10-28 00:00:43.958 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: giving hint 0000
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: giving hint 2222
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: giving hint 1110
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: giving hint 1122
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:22:59.406 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: giving hint 1120
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:22:59.422 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:23:01.403 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-28 07:23:01.403 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-28 07:23:01.403 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:23:54.585 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:23:54.585 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-28 07:23:54.585 [main] MMGame - [>>>][>>>] MMGame: giving hint 0000
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: giving hint 2222
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: giving hint 1110
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: giving hint 1122
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: giving hint 1120
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:23:54.601 [main] MMGame - [>>>][>>>] MMGame: received guess 9 9 9 9
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: giving hint 0000
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: giving hint 2222
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: giving hint 1110
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-28 07:25:04.310 [main] MMGame - [>>>][>>>] MMGame: giving hint 1122
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: giving hint 1120
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:25:04.325 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:25:06.166 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-28 07:25:06.182 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-28 07:25:06.182 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:25:20.259 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-28 07:25:20.259 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:25:56.358 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 8 8 8 8)
+[INFO ] 2016-10-28 07:25:56.358 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:26:03.765 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-28 07:26:03.765 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 7 7 7 8
+[INFO ] 2016-10-28 07:26:03.766 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: answer 8 8 8 8
+[INFO ] 2016-10-28 07:26:03.766 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: received guess 7 7 7 8
+[INFO ] 2016-10-28 07:26:03.766 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:26:03.767 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 1 0 0 0
+[INFO ] 2016-10-28 07:26:03.767 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:26:11.724 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-28 07:26:11.724 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 7 7 8 8
+[INFO ] 2016-10-28 07:26:11.725 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: answer 8 8 8 8
+[INFO ] 2016-10-28 07:26:11.725 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: received guess 7 7 8 8
+[INFO ] 2016-10-28 07:26:11.726 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: giving hint 1100
+[INFO ] 2016-10-28 07:26:11.726 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 1 1 0 0
+[INFO ] 2016-10-28 07:26:11.726 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:26:23.068 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Restarting game!
+[INFO ] 2016-10-28 07:26:23.068 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:26:24.557 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 3 3 1 3)
+[INFO ] 2016-10-28 07:26:24.558 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:26:29.911 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Restarting game!
+[INFO ] 2016-10-28 07:26:29.911 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:26:33.428 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 1 1 1 0)
+[INFO ] 2016-10-28 07:26:33.429 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: giving hint 0000
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: giving hint 2222
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: giving hint 1110
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: giving hint 1122
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: giving hint 1120
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-28 07:34:26.461 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:34:26.477 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:34:28.711 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-28 07:34:28.726 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-28 07:34:28.726 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:34:40.889 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-28 07:34:40.889 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:36:38.902 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 4 4 4 4)
+[INFO ] 2016-10-28 07:36:38.903 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:41:27.565 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:41:27.566 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-28 07:41:27.567 [main] MMGame - [>>>][>>>] MMGame: giving hint 0000
+[INFO ] 2016-10-28 07:41:27.569 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:41:27.569 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-28 07:41:27.569 [main] MMGame - [>>>][>>>] MMGame: giving hint 2222
+[INFO ] 2016-10-28 07:41:27.570 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:41:27.570 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-28 07:41:27.570 [main] MMGame - [>>>][>>>] MMGame: giving hint 1110
+[INFO ] 2016-10-28 07:41:27.571 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:41:27.571 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-28 07:41:27.571 [main] MMGame - [>>>][>>>] MMGame: giving hint 1122
+[INFO ] 2016-10-28 07:41:27.572 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:41:27.572 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-28 07:41:27.573 [main] MMGame - [>>>][>>>] MMGame: giving hint 1120
+[INFO ] 2016-10-28 07:41:27.574 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:41:27.574 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-28 07:41:27.574 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:41:27.576 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:41:27.576 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-28 07:41:27.576 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:41:27.577 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:41:27.577 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-28 07:41:27.578 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:41:27.578 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:41:27.578 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:41:27.578 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-28 07:41:27.588 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:41:27.588 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:41:27.588 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:41:46.910 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:41:46.912 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-28 07:41:46.912 [main] MMGame - [>>>][>>>] MMGame: giving hint 0000
+[INFO ] 2016-10-28 07:41:46.915 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:41:46.916 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-28 07:41:46.916 [main] MMGame - [>>>][>>>] MMGame: giving hint 2222
+[INFO ] 2016-10-28 07:41:46.917 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:41:46.918 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-28 07:41:46.918 [main] MMGame - [>>>][>>>] MMGame: giving hint 1110
+[INFO ] 2016-10-28 07:41:46.919 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:41:46.919 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-28 07:41:46.919 [main] MMGame - [>>>][>>>] MMGame: giving hint 1122
+[INFO ] 2016-10-28 07:41:46.920 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:41:46.920 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-28 07:41:46.920 [main] MMGame - [>>>][>>>] MMGame: giving hint 1120
+[INFO ] 2016-10-28 07:41:46.921 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:41:46.921 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-28 07:41:46.921 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:41:46.922 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:41:46.922 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-28 07:41:46.922 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:41:46.923 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:41:46.923 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-28 07:41:46.923 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:41:46.923 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:41:46.924 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:41:46.924 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-28 07:41:46.928 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:41:46.928 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:41:46.928 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:42:05.307 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:42:05.309 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-28 07:42:05.310 [main] MMGame - [>>>][>>>] MMGame: giving hint 0000
+[INFO ] 2016-10-28 07:42:05.311 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:42:05.312 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-28 07:42:05.312 [main] MMGame - [>>>][>>>] MMGame: giving hint 2222
+[INFO ] 2016-10-28 07:42:05.312 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:42:05.313 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-28 07:42:05.313 [main] MMGame - [>>>][>>>] MMGame: giving hint 1110
+[INFO ] 2016-10-28 07:42:05.313 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:42:05.313 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-28 07:42:05.314 [main] MMGame - [>>>][>>>] MMGame: giving hint 1122
+[INFO ] 2016-10-28 07:42:05.314 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:42:05.314 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-28 07:42:05.314 [main] MMGame - [>>>][>>>] MMGame: giving hint 1120
+[INFO ] 2016-10-28 07:42:05.315 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:42:05.315 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-28 07:42:05.315 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:42:05.316 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:42:05.316 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-28 07:42:05.316 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:42:05.316 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:42:05.317 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-28 07:42:05.317 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:42:05.317 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:42:05.318 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:42:05.318 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-28 07:42:05.321 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:42:05.321 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:42:05.322 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:42:07.038 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-28 07:42:07.040 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-28 07:42:07.040 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:42:21.735 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-28 07:42:21.735 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: giving hint 0000
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: giving hint 2222
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: giving hint 1110
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: giving hint 1122
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: giving hint 1120
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:45:16.028 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-28 07:45:16.044 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:45:16.044 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:45:16.044 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:45:17.895 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-28 07:45:17.910 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-28 07:45:17.910 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:45:29.789 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-28 07:45:29.789 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:46:39.655 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: giving hint 0000
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: giving hint 2222
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: giving hint 1110
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: giving hint 1122
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: giving hint 1120
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:46:39.671 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-28 07:46:39.686 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-28 07:46:39.686 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-28 07:46:39.686 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-28 07:46:41.733 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-28 07:46:41.748 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-28 07:46:41.748 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-28 07:46:51.144 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-28 07:46:51.145 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
