@@ -88,6 +88,9 @@ public class FXMLMastermindController implements Initializable {
     @FXML
     private Label out_result;
     
+    @FXML
+    private Button in_zero;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // Loaded
@@ -125,6 +128,7 @@ public class FXMLMastermindController implements Initializable {
     void onChangeColor(ActionEvent event) {
         Button target = (Button) event.getSource();
         target.setText(this.curCol.getText());
+        target.setTextFill(this.curCol.getTextFill());
         
         // If setting the answer
         if(round == 0){
@@ -160,6 +164,15 @@ public class FXMLMastermindController implements Initializable {
             // Change button text to match context
             out_guess.setText("Did I get it right?");
             
+            // Hide zero button because we arent supposed to actually use it
+            in_zero.setVisible(false);
+            
+            // Set button text to nothing in order to force client to use correct values
+            ((Button) getRow(1).getChildren().get(0)).setText("");
+            ((Button) getRow(1).getChildren().get(1)).setText("");
+            ((Button) getRow(1).getChildren().get(2)).setText("");
+            ((Button) getRow(1).getChildren().get(3)).setText("");
+            
             // Increment round
             nextRound();
         }else{
@@ -191,13 +204,20 @@ public class FXMLMastermindController implements Initializable {
                 
                 // Set components in row
                 setRowGuess(getRow(11), lastGuess); // Set the winning guess on last row
-                setRowHint(getRow(11), hint); // Hint should always be 1111 since win condition
+                setRowHint(getRow(11), lastGuess); // Set answer since it 1111
                 
                 // Show game result label
                 out_result.setVisible(true);
                 out_result.setText("W");
                 out_result.setTextFill(Color.web("#00ff00"));
+                
+                // Disable guess button
+                out_guess.disableProperty().set(true);
+                out_guess.setText("Game over!");
             }else if(round == 10){
+                // Since client lost, request answer from server
+                hint = client.sendPacket(new MMPacket((byte) 9, (byte) 9, (byte) 9, (byte) 9));
+                
                 // Lock current row and display last row with win
                 lockRow(getRow(round));
                 
@@ -213,6 +233,9 @@ public class FXMLMastermindController implements Initializable {
                 out_result.setVisible(true);
                 out_result.setText("L");
                 out_result.setTextFill(Color.web("#ff0000"));
+                
+                out_guess.disableProperty().set(true);
+                out_guess.setText("Game over!");
             }else{
                 nextRound();
             }
@@ -321,11 +344,11 @@ public class FXMLMastermindController implements Initializable {
     public void nextRound(){
         round++;
 
-        // Prevent user from pressing guess button when game is over
+        /* Prevent user from pressing guess button when game is over
         if(round == 11){
             out_guess.disableProperty().set(true);
             out_guess.setText("Game over!");
-        }
+        }*/
         
         lockRow(getRow(round - 1));
         revealRowContent(getRow(round));
@@ -335,15 +358,54 @@ public class FXMLMastermindController implements Initializable {
     }
     
     @FXML
-    void onNewGame(ActionEvent event)
+    void onNewGame(ActionEvent event) throws IOException
     {
-        // Start a new game, clear board
+        // Send game restart message
+        MMPacket restart = client.sendPacket(new MMPacket((byte) 10, (byte) 10, (byte) 10, (byte) 10));
+        client.disconnect(); // Unset client
+        
+        // Prepare scene
+        FXMLLoader loader = new FXMLLoader(app.getClass().getResource("/fxml/FXMLMastermind.fxml"));
+        loader.setResources(ResourceBundle.getBundle("MessagesBundle"));
+
+        GridPane root = (GridPane) loader.load();
+
+        FXMLMastermindController cont = cont = loader.getController();
+        cont.setContext(app, stage, conf);
+        loader.setController(cont);
+
+        Scene scene = new Scene(root);
+
+        stage.setScene(scene);
     }
     
     @FXML
-    void onEndGame(ActionEvent event)
+    void onEndGame(ActionEvent event) throws IOException
     {
-        // retrieves answer and displays it, disable game board
+        // Since client lost, request answer from server
+        MMPacket hint = client.sendPacket(new MMPacket((byte) 9, (byte) 9, (byte) 9, (byte) 9));
+        
+        // Set last guess in case this is called on first round and no guess was set
+        lastGuess = getRowPacket(getRow(round));
+        
+        // Lock current row and display last row with win
+        lockRow(getRow(round));
+
+        // Reveal last row
+        revealRowContent(getRow(11));
+        lockRow(getRow(11));
+
+        // Set components in row
+        setRowGuess(getRow(11), lastGuess); // Set the winning guess on last row
+        setRowHint(getRow(11), hint); // Hint should always be 1111 since win condition
+
+        // Show game result label
+        out_result.setVisible(true);
+        out_result.setText("L");
+        out_result.setTextFill(Color.web("#ff0000"));
+
+        out_guess.disableProperty().set(true);
+        out_guess.setText("Game over!");
     }
     
     @FXML

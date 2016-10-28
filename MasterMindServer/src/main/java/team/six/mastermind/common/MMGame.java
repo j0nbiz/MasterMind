@@ -91,13 +91,13 @@ public class MMGame {
         log.info("MMGame: answer " + answer.toString());
         log.info("MMGame: received guess " + guess.toString());
 
-        // Verify that the guesses are valid entries
+        /* Verify that the guesses are valid entries
         for (int i = 0; i < guess.getBytes().length; i++) {
             if ((guess.getBytes()[i] < 1) || (guess.getBytes()[i] > 8)) {
                 log.info("MMGame: Invalid Guess Error");
                 throw new IllegalArgumentException("Invalid guess: " + guess.getBytes()[i]);
             }
-        }
+        }*/
 
         // Increment round count on every guess, even if it is a good answer
         round++;
@@ -108,13 +108,18 @@ public class MMGame {
             return new MMPacket((byte) 1, (byte) 1, (byte) 1, (byte) 1);
         }
         
-        // Check for end of game
+        /* Check for end of game
         if (round > 9)
         {
             log.info("MMGame: Game Over");
             return new MMPacket((byte) 9, (byte) 9, (byte) 9, (byte) 9);
+        }*/
+        
+        // Check for game over answer request
+        if (guess.equals(new MMPacket((byte) 9, (byte) 9, (byte) 9, (byte) 9))){
+            return this.answer;
         }
-
+        
         // Get the total number of correct colors, ignoring if they are a
         // match or not
         correctColors = getColors(guess);

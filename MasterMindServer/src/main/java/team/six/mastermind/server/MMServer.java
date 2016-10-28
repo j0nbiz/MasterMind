@@ -62,7 +62,12 @@ public class MMServer {
             // Fill current packet
             packet.decode(byteBuffer);
 
+            
+
             // Interpret packets
+            
+            
+            
             if (game == null) {
                 if (packet.equals(new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0))) {
                     // New game with random answer
@@ -79,7 +84,21 @@ public class MMServer {
                 for (byte comp : new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0).getBytes()) {
                     client.getOutputStream().write(comp); // Send all packet components to client
                 }
+            }else if (packet.equals(new MMPacket((byte) 10, (byte) 10, (byte) 10, (byte) 10))) {
+                // Check for game restart request
+                // Send back succes request and allow client loop to continue
+                for (byte comp : new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0).getBytes()) {
+                    client.getOutputStream().write(comp); // Send all packet components to client
+                }
+
+                client.close(); // Close old client
+                client = serverSocket.accept(); // Accept new client
+
+                game = null; // Unset game to fall into if statement
                 
+                log.info("Restarting game!");
+                log.info("");
+
             }else{
                 // Interpret incoming packet
                 log.info("Round: " + game.getRound());
