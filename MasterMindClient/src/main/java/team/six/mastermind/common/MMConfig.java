@@ -1,16 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package team.six.mastermind.common;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 /**
- *
- * @author 1437203
+ * This class provides the configuration for the connection.
+ * 
+ * @author Jonathan Bizier
  */
 public class MMConfig {
     private StringProperty host;

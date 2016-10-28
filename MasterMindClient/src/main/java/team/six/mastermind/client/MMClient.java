@@ -2,7 +2,6 @@ package team.six.mastermind.client;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
 import java.util.ArrayList;
@@ -11,8 +10,9 @@ import org.slf4j.LoggerFactory;
 import team.six.mastermind.common.MMPacket;
 
 /**
- *
- * @author j0nbiz
+ * This class connects the client to the server.
+ * 
+ * @author Jonathan Bizier
  */
 public class MMClient {
     // Logger
@@ -32,11 +32,25 @@ public class MMClient {
     // GUI elements
     ArrayList<MMPacket> hints = new ArrayList<>();
 
+    /**
+     * Constructor, requires the socket to the server.
+     * 
+     * @param mmServer      The server's socket
+     * @throws IOException 
+     */
     public MMClient(Socket mmServer) throws IOException {
         this.server = mmServer;
         this.out = mmServer.getOutputStream(); // Get target
     }
     
+    /**
+     * Sends the guess packet to the server, and returns the hint packet sent
+     * by the server.
+     * 
+     * @param packet        The guess packet
+     * @return              The hint packet
+     * @throws IOException 
+     */
     public MMPacket sendPacket(MMPacket packet) throws IOException{     
         // Reset buffer counter
         totalBytesRcvd = 0;
@@ -79,7 +93,12 @@ public class MMClient {
         return hint;
     }
 
+    /**
+     * Closes server connection.
+     * 
+     * @throws IOException 
+     */
     public void disconnect() throws IOException {
-        server.close(); // Close server connection
+        server.close();
     }
 }
