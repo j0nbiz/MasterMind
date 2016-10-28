@@ -1,18 +1,9 @@
 package team.six.fxmlcontrollers;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import java.io.IOException;
 import java.net.Socket;
 import java.net.URL;
-import java.util.Objects;
 import java.util.ResourceBundle;
-import javafx.application.Platform;
-import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -20,7 +11,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -30,9 +20,9 @@ import team.six.mastermind.common.MMConfig;
 import team.six.mastermind.common.MMPacket;
 
 /**
- * FXML Controller class
+ * FXML Controller for Mastermind Game window.
  *
- * @author 1437203
+ * @author Jonathan Bizier
  */
 public class FXMLMastermindController implements Initializable {
     private MMConfig conf;
@@ -91,15 +81,31 @@ public class FXMLMastermindController implements Initializable {
     @FXML
     private Button in_zero;
     
+    /**
+     * Initializes the controller class.
+     * 
+     * @param url
+     * @param rb
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // Loaded
     }
    
+    /**
+     * Default constructor.  Creates a MMConfig object.
+     */
     public FXMLMastermindController(){
         this.conf = new MMConfig();
     }
     
+    /**
+     * Sets the context for the class in place of overloaded constructor.
+     * 
+     * @param app       The Client app
+     * @param stage     The Connect window's stage
+     * @param conf      The configuration
+     */
     public void setContext(MMClientApp app, Stage stage, MMConfig conf) throws IOException{
         this.app = app;
         this.stage = stage;
@@ -124,6 +130,11 @@ public class FXMLMastermindController implements Initializable {
         }
     }
 
+    /**
+     * Event handler for guess component buttons.
+     * 
+     * @param event 
+     */
     @FXML
     void onChangeColor(ActionEvent event) {
         Button target = (Button) event.getSource();
@@ -149,6 +160,12 @@ public class FXMLMastermindController implements Initializable {
         }
     }
 
+    /**
+     * Event handler for send guess button.
+     * 
+     * @param event
+     * @throws IOException 
+     */
     @FXML
     void onGuess(ActionEvent event) throws IOException {
         if(round == 0){
@@ -242,11 +259,22 @@ public class FXMLMastermindController implements Initializable {
         }
     }
 
+    /**
+     * Event handler for the select color buttons.
+     * 
+     * @param event 
+     */
     @FXML
     void onSelectColor(ActionEvent event) {
         this.curCol = (Button) event.getSource();
     }
     
+    /**
+     * Verifies if the game has been won.
+     * 
+     * @param hint      The hint packet to check against
+     * @return          True if the game has been won, else false
+     */
     public boolean isWin(MMPacket hint){
         for(byte comp: hint.getBytes()){
             if(comp != 1){
@@ -256,25 +284,46 @@ public class FXMLMastermindController implements Initializable {
         return true;
     }
     
+    /**
+     * Hides the row from the board.
+     * 
+     * @param row   The row to be hidden
+     */
     public void hideRowContent(GridPane row){
         for(int i = 0; i < row.getChildren().size(); i++){
             row.getChildren().get(i).setVisible(false);
         }
     }
     
+    /**
+     * Displays the hidden row.
+     * 
+     * @param row   The row to be displayed
+     */
     public void revealRowContent(GridPane row){
         for(int i = 0; i < row.getChildren().size(); i++){
             row.getChildren().get(i).setVisible(true);
         }
     }
     
+    /**
+     * Prevents the row from being clicked.
+     * 
+     * @param row   The row to be locked
+     */
     public void lockRow(GridPane row){
         for(int i = 0; i < row.getChildren().size() - 1; i++){
             row.getChildren().get(i).disableProperty().set(true);
         }
     }
     
-    public MMPacket getRowPacket(GridPane row) throws IOException{
+    /**
+     * Turns the guess row into a MMPacket.
+     * 
+     * @param row           The row in play
+     * @return              The MMPacket containing the guess
+     */
+    public MMPacket getRowPacket(GridPane row) {
         // Get current components
         Button comp1 = (Button) row.getChildren().get(0);
         Button comp2 = (Button) row.getChildren().get(1);
@@ -287,6 +336,12 @@ public class FXMLMastermindController implements Initializable {
                             (byte) Integer.parseInt(comp4.getText()));
     }
     
+    /**
+     * Displays the hint packet on the hint row.
+     * 
+     * @param row       The hint row
+     * @param hint      The hint packet from the server
+     */
     public void setRowHint(GridPane row, MMPacket hint){
         // Long fluent syntax because inner grid pane
         Button comp1 = (Button) ((GridPane) row.getChildren().get(4)).getChildren().get(0);
@@ -300,6 +355,12 @@ public class FXMLMastermindController implements Initializable {
         comp4.setText(String.valueOf(hint.getBytes()[3]));
     }
     
+    /**
+     * Fills the new row with previous guess.
+     * 
+     * @param row       Current row
+     * @param guess     Previous guess
+     */
     public void setRowGuess(GridPane row, MMPacket guess){
         Button comp1 = (Button) row.getChildren().get(0);
         Button comp2 = (Button) row.getChildren().get(1);
@@ -312,6 +373,12 @@ public class FXMLMastermindController implements Initializable {
         comp4.setText(String.valueOf(guess.getBytes()[3]));
     }
     
+    /**
+     * Returns the row with the given id.
+     * 
+     * @param id    The row's id
+     * @return      The row
+     */
     public GridPane getRow(int id){
         switch(id){
             case 1:
@@ -341,6 +408,9 @@ public class FXMLMastermindController implements Initializable {
         }
     }
     
+    /**
+     * Starts the next round.
+     */
     public void nextRound(){
         round++;
 
@@ -357,6 +427,12 @@ public class FXMLMastermindController implements Initializable {
         setRowGuess(getRow(round), lastGuess);
     }
     
+    /**
+     * Event handler for New Game menu item.  Resets the board.
+     * 
+     * @param event
+     * @throws IOException 
+     */
     @FXML
     void onNewGame(ActionEvent event) throws IOException
     {
@@ -379,6 +455,12 @@ public class FXMLMastermindController implements Initializable {
         stage.setScene(scene);
     }
     
+    /**
+     * Event handler for End Game menu item.  Ends the game and displays the answer.
+     * 
+     * @param event
+     * @throws IOException 
+     */
     @FXML
     void onEndGame(ActionEvent event) throws IOException
     {
@@ -408,6 +490,12 @@ public class FXMLMastermindController implements Initializable {
         out_guess.setText("Game over!");
     }
     
+    /**
+     * Event handler for How To Play menu item.  Launches the How To Play window.
+     * 
+     * @param event
+     * @throws IOException 
+     */
     @FXML
     void onHowTo(ActionEvent event) throws IOException
     {
@@ -428,6 +516,12 @@ public class FXMLMastermindController implements Initializable {
         howToStage.show();
     }
     
+    /**
+     * Event handler for the About menu item.  Launches the About window.
+     * 
+     * @param event
+     * @throws IOException 
+     */
     @FXML
     void onAbout(ActionEvent event) throws IOException
     {

@@ -1,14 +1,6 @@
 package team.six.fxmlcontrollers;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import java.io.IOException;
-import java.net.Socket;
-import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
 import javafx.application.Platform;
@@ -16,7 +8,6 @@ import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
@@ -25,9 +16,9 @@ import team.six.mastermind.client.MMClientApp;
 import team.six.mastermind.common.MMConfig;
 
 /**
- * FXML Controller class
+ * FXML Controller for Connect window.
  *
- * @author 1437203
+ * @author Jonathan Bizier
  */
 public class FXMLConnectController {
     private MMConfig conf;
@@ -37,15 +28,28 @@ public class FXMLConnectController {
     @FXML
     private TextField in_host;
     
+    /**
+     * Initializes the controller class.
+     */
     @FXML
     public void initialize() {
         // Loaded
     }
     
+    /**
+     * Default constructor.  Creates a MMConfig object.
+     */
     public FXMLConnectController(){
         this.conf = new MMConfig();
     }
     
+    /**
+     * Sets the context for the class in place of overloaded constructor.
+     * 
+     * @param app       The Client app
+     * @param stage     The Connect window's stage
+     * @param conf      The configuration
+     */
     public void setContext(MMClientApp app, Stage stage, MMConfig conf){
         this.app = app;
         this.stage = stage;
@@ -55,6 +59,12 @@ public class FXMLConnectController {
         Bindings.bindBidirectional(in_host.textProperty(), conf.getHostProperty());
     }
 
+    /**
+     * Event handler for Connect button.
+     * 
+     * @param event
+     * @throws IOException 
+     */
     @FXML
     void onConnect(ActionEvent event) throws IOException {
         // Check for empty
@@ -75,6 +85,11 @@ public class FXMLConnectController {
         }
     }
 
+    /**
+     * Event handler for Exit button.
+     * 
+     * @param event 
+     */
     @FXML
     void onExit(ActionEvent event) {
         Platform.exit();
