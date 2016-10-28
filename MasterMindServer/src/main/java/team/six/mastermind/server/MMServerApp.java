@@ -8,7 +8,6 @@ import java.io.IOException;
  * @author Jonathan Bizier
  */
 public class MMServerApp {
-
     // Create a server instance
     public static void main(String[] args) throws IOException, InterruptedException {
         MMServer server = new MMServer();
