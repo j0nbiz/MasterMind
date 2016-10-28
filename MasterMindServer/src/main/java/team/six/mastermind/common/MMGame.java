@@ -31,11 +31,11 @@ public class MMGame {
     public MMGame(MMPacket answer) {
         byte[] answerBytes = answer.getBytes();
         byte[] temp = new byte[4];
-        
+
         for (int i = 0; i < answerBytes.length; i++) {
             temp[i] = answerBytes[i];
         }
-        
+
         this.answer = new MMPacket();
         this.answer.decode(temp);
     }
@@ -73,11 +73,8 @@ public class MMGame {
     /**
      * This method verifies if the guess is the correct answer. It returns a
      * response, which contains the hints. For a win, hints will contain all 1.
-     * Hints Scheme: 
-     * 0 is completely wrong
-     * 1 is correct color in correct position
-     * 2 is correct color in wrong position
-     * 9 is end of game.
+     * Hints Scheme: 0 is completely wrong 1 is correct color in correct
+     * position 2 is correct color in wrong position 9 is end of game.
      *
      * @param guess The guess packet
      * @return The response packet
@@ -88,17 +85,6 @@ public class MMGame {
         int correctColors;
         int matches;
 
-        log.info("MMGame: answer " + answer.toString());
-        log.info("MMGame: received guess " + guess.toString());
-
-        /* Verify that the guesses are valid entries
-        for (int i = 0; i < guess.getBytes().length; i++) {
-            if ((guess.getBytes()[i] < 1) || (guess.getBytes()[i] > 8)) {
-                log.info("MMGame: Invalid Guess Error");
-                throw new IllegalArgumentException("Invalid guess: " + guess.getBytes()[i]);
-            }
-        }*/
-
         // Increment round count on every guess, even if it is a good answer
         round++;
 
@@ -107,19 +93,12 @@ public class MMGame {
             log.info("MMGame: winning combination " + guess.toString());
             return new MMPacket((byte) 1, (byte) 1, (byte) 1, (byte) 1);
         }
-        
-        /* Check for end of game
-        if (round > 9)
-        {
-            log.info("MMGame: Game Over");
-            return new MMPacket((byte) 9, (byte) 9, (byte) 9, (byte) 9);
-        }*/
-        
+
         // Check for game over answer request
-        if (guess.equals(new MMPacket((byte) 9, (byte) 9, (byte) 9, (byte) 9))){
+        if (guess.equals(new MMPacket((byte) 9, (byte) 9, (byte) 9, (byte) 9))) {
             return this.answer;
         }
-        
+
         // Get the total number of correct colors, ignoring if they are a
         // match or not
         correctColors = getColors(guess);
@@ -140,7 +119,6 @@ public class MMGame {
                 hints[i] = 0;
             }
         }
-
         log.info("MMGame: giving hint " + hints[0] + hints[1] + hints[2] + hints[3]);
         return new MMPacket(hints[0], hints[1], hints[2], hints[3]);
     }
@@ -159,7 +137,6 @@ public class MMGame {
                 num++;
             }
         }
-
         return num;
     }
 
@@ -198,7 +175,6 @@ public class MMGame {
                 }
             }
         }
-
         return num;
     }
 }

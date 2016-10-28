@@ -9,27 +9,27 @@ import team.six.mastermind.common.MMPacket;
 
 /**
  * This class interacts with the game, and transfers packets to the client.
- * 
+ *
  * @author Jonathan Bizier
  */
 public class MMServer {
-    // Logger
-    private final Logger log = LoggerFactory.getLogger(getClass().getName());
-    
+
     // Net IO variables
     private static final int BUFFSIZE = 4; // Packet holds 4 components
+    // Logger
+    private final Logger log = LoggerFactory.getLogger(getClass().getName());
 
     private ServerSocket serverSocket;
     private Socket client;
-    
+
     private byte[] byteBuffer = new byte[BUFFSIZE];
     private int bytesRcvd;
     private int totalBytesRcvd = 0;
 
     /**
-     * Default constructor.  Opens the server socket and starts the server.
-     * 
-     * @throws IOException 
+     * Default constructor. Opens the server socket and starts the server.
+     *
+     * @throws IOException
      */
     public MMServer() throws IOException {
         this.serverSocket = new ServerSocket(50000);
@@ -39,19 +39,28 @@ public class MMServer {
     }
 
     /**
-     * Starts the server running on a loop.  Interacts with the game when a client connects.
-     * 
-     * @throws IOException 
+     * Starts the server running on a loop. Interacts with the game when a
+     * client connects.
+     *
+     * @throws IOException
      */
     public void start() throws IOException {
         log.info("Server initialized!");
         log.info("Address: " + InetAddress.getLocalHost().getHostAddress());
         log.info("");
-        
+
         // Block here until connection is made with client
-        client = serverSocket.accept();
-        log.info("Client connected! Address: " + client.getInetAddress().getHostAddress());
-        log.info("");
+        try {
+            client = serverSocket.accept();
+            log.info("Client connected! Address: " + client.getInetAddress().getHostAddress());
+            log.info("");
+        } catch (SocketException e) {
+            // In case client closes game before game is even started
+            client.close(); // Close old client
+            log.info("Client connection interupted! Waiting for new client...");
+            log.info("");
+            client = serverSocket.accept(); // Accept new client
+        }
 
         // Create packet to interpret response
         MMPacket packet = new MMPacket();
@@ -60,9 +69,9 @@ public class MMServer {
         MMGame game = null;
 
         for (;;) {
-            try{
+            try {
                 receivePackets();
-            }catch(SocketException e){
+            } catch (SocketException e) {
                 client.close(); // Close old client
 
                 log.info("Client connection interupted! Waiting for new client...");
@@ -74,15 +83,15 @@ public class MMServer {
 
                 log.info("Client connected! Address: " + client.getInetAddress().getHostAddress());
                 log.info("");
-                
+
                 totalBytesRcvd = 0; // Reset buffer to accept new packet in case connection was lost before all 4 bytes received
-                
+
                 receivePackets(); // Receive new packets
             }
-            
+
             // Fill current packet
             packet.decode(byteBuffer);
-            
+
             // Interpret packets
             if (game == null) {
                 if (packet.equals(new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0))) {
@@ -95,12 +104,12 @@ public class MMServer {
 
                 log.info("Game created! (Answer = " + game.getAnswer().toString() + ")");
                 log.info("");
-                
+
                 // Send back succes request and allow client loop to continue
                 for (byte comp : new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0).getBytes()) {
                     client.getOutputStream().write(comp); // Send all packet components to client
                 }
-            }else if (packet.equals(new MMPacket((byte) 10, (byte) 10, (byte) 10, (byte) 10))) {
+            } else if (packet.equals(new MMPacket((byte) 10, (byte) 10, (byte) 10, (byte) 10))) {
                 // Check for game restart request
                 // Send back succes request and allow client loop to continue
                 for (byte comp : new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0).getBytes()) {
@@ -111,29 +120,34 @@ public class MMServer {
                 client = serverSocket.accept(); // Accept new client
 
                 game = null; // Unset game to fall into if statement
-                
+
                 log.info("Restarting game!");
                 log.info("");
 
-            }else{
+            } else {
                 // Interpret incoming packet
                 log.info("Round: " + game.getRound());
                 log.info("Guess: " + packet.toString());
 
                 MMPacket hint = game.interpret(packet);
-                
+
                 //Send back interpretation
                 for (byte comp : hint.getBytes()) {
                     client.getOutputStream().write(comp); // Send all packet components to client
                 }
-                
+
                 log.info("Returning hint: " + hint.toString());
                 log.info("");
             }
         }
     }
-    
-    public void receivePackets() throws SocketException, IOException{
+
+    /**
+     * This waits and receives packets
+     *
+     * @throws SocketException, IOException
+     */
+    public void receivePackets() throws SocketException, IOException {
         while (totalBytesRcvd < byteBuffer.length) {
             // Check for client disconnection and throw exception
             if ((bytesRcvd = client.getInputStream().read(byteBuffer, totalBytesRcvd, byteBuffer.length - totalBytesRcvd)) == -1) {

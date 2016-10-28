@@ -21,13 +21,21 @@ import team.six.mastermind.common.MMConfig;
  * @author Jonathan Bizier
  */
 public class FXMLConnectController {
+
     private MMConfig conf;
     private Stage stage;
     private MMClientApp app;
-    
+
     @FXML
     private TextField in_host;
-    
+
+    /**
+     * Default constructor. Creates a MMConfig object.
+     */
+    public FXMLConnectController() {
+        this.conf = new MMConfig();
+    }
+
     /**
      * Initializes the controller class.
      */
@@ -35,40 +43,33 @@ public class FXMLConnectController {
     public void initialize() {
         // Loaded
     }
-    
-    /**
-     * Default constructor.  Creates a MMConfig object.
-     */
-    public FXMLConnectController(){
-        this.conf = new MMConfig();
-    }
-    
+
     /**
      * Sets the context for the class in place of overloaded constructor.
-     * 
-     * @param app       The Client app
-     * @param stage     The Connect window's stage
-     * @param conf      The configuration
+     *
+     * @param app The Client app
+     * @param stage The Connect window's stage
+     * @param conf The configuration
      */
-    public void setContext(MMClientApp app, Stage stage, MMConfig conf){
+    public void setContext(MMClientApp app, Stage stage, MMConfig conf) {
         this.app = app;
         this.stage = stage;
         this.conf = conf;
-        
+
         // Bind here because method runs AFTER initialize and would be binded to old object
         Bindings.bindBidirectional(in_host.textProperty(), conf.getHostProperty());
     }
 
     /**
      * Event handler for Connect button.
-     * 
+     *
      * @param event
-     * @throws IOException 
+     * @throws IOException
      */
     @FXML
     void onConnect(ActionEvent event) throws IOException {
         // Check for empty
-        if(!Objects.equals(in_host.getText(), "")){
+        if (!Objects.equals(in_host.getText(), "")) {
             // Prepare next scene
             FXMLLoader loader = new FXMLLoader(app.getClass().getResource("/fxml/FXMLMastermind.fxml"));
             loader.setResources(ResourceBundle.getBundle("MessagesBundle"));
@@ -87,8 +88,8 @@ public class FXMLConnectController {
 
     /**
      * Event handler for Exit button.
-     * 
-     * @param event 
+     *
+     * @param event
      */
     @FXML
     void onExit(ActionEvent event) {

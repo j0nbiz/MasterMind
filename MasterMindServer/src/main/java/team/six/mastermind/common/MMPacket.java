@@ -86,7 +86,6 @@ public class MMPacket {
                 return false;
             }
         }
-        
         return true;
     }
 }

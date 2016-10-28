@@ -13,11 +13,12 @@ import javafx.stage.Stage;
  * @author Erika Bourque
  */
 public class FXMLAboutController implements Initializable {
+
     private Stage stage;
-    
+
     /**
      * Initializes the controller class.
-     * 
+     *
      * @param url
      * @param rb
      */
@@ -28,21 +29,20 @@ public class FXMLAboutController implements Initializable {
 
     /**
      * Sets the context for the class in place of overloaded constructor.
-     * 
-     * @param stage     The About window's stage
+     *
+     * @param stage The About window's stage
      */
-    public void setContext(Stage stage){
+    public void setContext(Stage stage) {
         this.stage = stage;
     }
-    
+
     /**
-     * Event handler for the Close button.  Closes the window.
-     * 
-     * @param event 
+     * Event handler for the Close button. Closes the window.
+     *
+     * @param event
      */
     @FXML
-    void onClose(ActionEvent event)
-    {
+    void onClose(ActionEvent event) {
         stage.close();
-    }    
+    }
 }

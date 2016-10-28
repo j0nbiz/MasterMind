@@ -2,7 +2,6 @@ package team.six.fxmlcontrollers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,8 +13,9 @@ import javafx.stage.Stage;
  * @author Erika Bourque
  */
 public class FXMLHowToController implements Initializable {
+
     private Stage stage;
-    
+
     /**
      * Initializes the controller class.
      */
@@ -26,21 +26,20 @@ public class FXMLHowToController implements Initializable {
 
     /**
      * Sets the context for the class in place of overloaded constructor.
-     * 
-     * @param stage     The How To Play window's stage
+     *
+     * @param stage The How To Play window's stage
      */
-    public void setContext(Stage stage){
+    public void setContext(Stage stage) {
         this.stage = stage;
     }
-    
+
     /**
-     * Event handler for the Close button.  Closes the window.
-     * 
-     * @param event 
+     * Event handler for the Close button. Closes the window.
+     *
+     * @param event
      */
     @FXML
-    void onClose(ActionEvent event)
-    {
+    void onClose(ActionEvent event) {
         stage.close();
-    }       
+    }
 }

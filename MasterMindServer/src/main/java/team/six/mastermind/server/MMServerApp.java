@@ -4,7 +4,7 @@ import java.io.IOException;
 
 /**
  * This app starts the MMServer.
- * 
+ *
  * @author Jonathan Bizier
  */
 public class MMServerApp {
