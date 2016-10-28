@@ -111,6 +111,7 @@ public class FXMLMastermindController implements Initializable {
      * @param app The Client app
      * @param stage The Connect window's stage
      * @param conf The configuration
+     * @throws java.io.IOException
      */
     public void setContext(MMClientApp app, Stage stage, MMConfig conf) throws IOException {
         this.app = app;
@@ -440,6 +441,7 @@ public class FXMLMastermindController implements Initializable {
      * Gets all the guess buttons in row
      *
      * @param row
+     * @return Button[]
      */
     public Button[] getRowGuessButtons(GridPane row) {
         // Get buttons in row and add to array
@@ -453,6 +455,7 @@ public class FXMLMastermindController implements Initializable {
      * Gets all the hint buttons in row
      *
      * @param row
+     * @return button[] array of buttons
      */
     public Button[] getRowHintButtons(GridPane row) {
         // Get buttons in row and add to array
