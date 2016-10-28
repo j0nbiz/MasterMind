@@ -10,7 +10,7 @@ import java.util.Random;
 public class MMGame {
 
     private final MMPacket answer;
-    private int round = 0;
+    private int round = 1;
 
     /**
      * Default constructor. Creates a game with a random answer.

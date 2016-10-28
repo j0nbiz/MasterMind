@@ -80,19 +80,20 @@ public class MMServer {
                     client.getOutputStream().write(comp); // Send all packet components to client
                 }
                 
-            } else if (game.getRound() > 0) {
+            }else{
                 // Interpret incoming packet
                 log.info("Round: " + game.getRound());
                 log.info("Guess: " + packet.toString());
-                log.info("");
 
+                MMPacket hint = game.interpret(packet);
+                
                 //Send back interpretation
-                for (byte comp : game.interpret(packet).getBytes()) {
+                for (byte comp : hint.getBytes()) {
                     client.getOutputStream().write(comp); // Send all packet components to client
                 }
                 
-            } if(game.getRound() == 10) {
-                log.info("Game over!");
+                log.info("Returning hint: " + hint.toString());
+                log.info("");
             }
         }
     }

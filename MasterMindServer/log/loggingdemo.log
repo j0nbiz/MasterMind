@@ -412,3 +412,222 @@
 [INFO ] 2016-10-27 16:08:43.558 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
 [INFO ] 2016-10-27 16:08:52.316 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
 [INFO ] 2016-10-27 16:08:52.317 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 18:49:57.251 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 18:49:57.252 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 18:49:57.252 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 18:50:05.847 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 18:50:05.847 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:07:35.489 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 19:07:35.491 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 19:07:35.491 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:07:40.586 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 19:07:40.586 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:08:06.162 [main] MMServer - [>>>][>>>] Game created! (Answer = 6 7 8 3)
+[INFO ] 2016-10-27 19:08:06.162 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:08:23.248 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 19:08:23.250 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 19:08:23.250 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:08:31.078 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 19:08:31.078 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:42:53.965 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 19:42:53.967 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 19:42:53.967 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:43:05.561 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 19:43:05.561 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:44:26.260 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 19:44:26.261 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 19:44:26.261 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:44:29.000 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 19:44:29.000 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:46:52.963 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 19:46:52.964 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 19:46:52.964 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:46:57.278 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 19:46:57.278 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:47:31.998 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 19:47:31.999 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 19:47:31.999 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:47:36.904 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 19:47:36.905 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:48:32.604 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 19:48:32.605 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 19:48:32.605 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:48:38.612 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 19:48:38.612 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:49:01.801 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 19:49:01.802 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 19:49:01.802 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:49:05.436 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 19:49:05.436 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:49:08.873 [main] MMServer - [>>>][>>>] Game created! (Answer = 5 5 7 1)
+[INFO ] 2016-10-27 19:49:08.873 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:52:48.157 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 19:52:48.158 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 19:52:48.158 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:52:50.415 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 19:52:50.415 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 19:52:53.065 [main] MMServer - [>>>][>>>] Game created! (Answer = 6 1 1 7)
+[INFO ] 2016-10-27 19:52:53.065 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:06:53.547 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:06:53.548 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:06:53.548 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:06:59.820 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:06:59.820 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:07:03.672 [main] MMServer - [>>>][>>>] Game created! (Answer = 1 5 7 3)
+[INFO ] 2016-10-27 20:07:03.672 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:08:31.869 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:08:31.870 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:08:31.871 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:08:35.720 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:08:35.721 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:08:41.343 [main] MMServer - [>>>][>>>] Game created! (Answer = 1 4 4 6)
+[INFO ] 2016-10-27 20:08:41.343 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:12:38.464 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:12:38.465 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:12:38.466 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:12:43.200 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:12:43.200 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:12:47.303 [main] MMServer - [>>>][>>>] Game created! (Answer = 5 1 6 5)
+[INFO ] 2016-10-27 20:12:47.303 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:15:31.146 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:15:31.148 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:15:31.148 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:15:38.352 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:15:38.353 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:15:41.978 [main] MMServer - [>>>][>>>] Game created! (Answer = 6 5 5 3)
+[INFO ] 2016-10-27 20:15:41.978 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:15:46.443 [main] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-27 20:15:46.443 [main] MMServer - [>>>][>>>] Guess: 0 0 0 0
+[INFO ] 2016-10-27 20:15:46.443 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:20:46.757 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:20:46.759 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:20:46.759 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:20:51.340 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:20:51.340 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:21:13.309 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:21:13.310 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:21:13.310 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:21:17.069 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:21:17.070 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:21:27.118 [main] MMServer - [>>>][>>>] Game created! (Answer = 6 6 1 1)
+[INFO ] 2016-10-27 20:21:27.118 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:21:41.869 [main] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-27 20:21:41.869 [main] MMServer - [>>>][>>>] Guess: 1 2 3 4
+[INFO ] 2016-10-27 20:21:41.869 [main] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 20:21:41.869 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:23:26.664 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:23:26.665 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:23:26.665 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:23:39.998 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:23:39.998 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:23:54.129 [main] MMServer - [>>>][>>>] Game created! (Answer = 2 3 4 2)
+[INFO ] 2016-10-27 20:23:54.129 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:24:07.484 [main] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-27 20:24:07.484 [main] MMServer - [>>>][>>>] Guess: 4 1 4 2
+[INFO ] 2016-10-27 20:24:07.484 [main] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 20:24:07.485 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:27:50.251 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:27:50.252 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:27:50.252 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:27:56.581 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:27:56.581 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:28:12.756 [main] MMServer - [>>>][>>>] Game created! (Answer = 6 6 6 6)
+[INFO ] 2016-10-27 20:28:12.756 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:31:14.690 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:31:14.692 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:31:14.692 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:31:23.819 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:31:23.819 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:31:27.710 [main] MMServer - [>>>][>>>] Game created! (Answer = 6 5 4 4)
+[INFO ] 2016-10-27 20:31:27.710 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:31:44.783 [main] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-27 20:31:44.783 [main] MMServer - [>>>][>>>] Guess: 1 1 1 1
+[INFO ] 2016-10-27 20:31:44.783 [main] MMServer - [>>>][>>>] Returning hint: 0 0 0 0
+[INFO ] 2016-10-27 20:31:44.783 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:32:50.776 [main] MMServer - [>>>][>>>] Round: 2
+[INFO ] 2016-10-27 20:32:50.776 [main] MMServer - [>>>][>>>] Guess: 0 0 0 0
+[INFO ] 2016-10-27 20:33:44.947 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:33:44.948 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:33:44.949 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:33:49.866 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:33:49.867 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:33:51.574 [main] MMServer - [>>>][>>>] Game created! (Answer = 4 1 6 5)
+[INFO ] 2016-10-27 20:33:51.574 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:34:11.744 [main] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-27 20:34:11.744 [main] MMServer - [>>>][>>>] Guess: 1 1 1 1
+[INFO ] 2016-10-27 20:34:11.745 [main] MMServer - [>>>][>>>] Returning hint: 1 0 0 0
+[INFO ] 2016-10-27 20:34:11.745 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:34:21.379 [main] MMServer - [>>>][>>>] Round: 2
+[INFO ] 2016-10-27 20:34:21.379 [main] MMServer - [>>>][>>>] Guess: 1 1 1 1
+[INFO ] 2016-10-27 20:34:21.379 [main] MMServer - [>>>][>>>] Returning hint: 1 0 0 0
+[INFO ] 2016-10-27 20:34:21.379 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:35:02.830 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:35:02.831 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:35:02.831 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:35:08.006 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:35:08.006 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:36:37.376 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:36:37.378 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:36:37.378 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:36:42.838 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:36:42.838 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:36:46.379 [main] MMServer - [>>>][>>>] Game created! (Answer = 4 2 5 3)
+[INFO ] 2016-10-27 20:36:46.379 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:37:00.310 [main] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-27 20:37:00.310 [main] MMServer - [>>>][>>>] Guess: 1 1 1 1
+[INFO ] 2016-10-27 20:37:00.310 [main] MMServer - [>>>][>>>] Returning hint: 0 0 0 0
+[INFO ] 2016-10-27 20:37:00.310 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:37:29.804 [main] MMServer - [>>>][>>>] Round: 2
+[INFO ] 2016-10-27 20:37:29.804 [main] MMServer - [>>>][>>>] Guess: 1 4 1 1
+[INFO ] 2016-10-27 20:37:29.804 [main] MMServer - [>>>][>>>] Returning hint: 2 0 0 0
+[INFO ] 2016-10-27 20:37:29.804 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:37:55.092 [main] MMServer - [>>>][>>>] Round: 3
+[INFO ] 2016-10-27 20:37:55.092 [main] MMServer - [>>>][>>>] Guess: 4 5 5 5
+[INFO ] 2016-10-27 20:37:55.092 [main] MMServer - [>>>][>>>] Returning hint: 1 1 0 0
+[INFO ] 2016-10-27 20:37:55.092 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:38:30.747 [main] MMServer - [>>>][>>>] Round: 4
+[INFO ] 2016-10-27 20:38:30.747 [main] MMServer - [>>>][>>>] Guess: 4 1 5 2
+[INFO ] 2016-10-27 20:38:30.747 [main] MMServer - [>>>][>>>] Returning hint: 1 1 2 0
+[INFO ] 2016-10-27 20:38:30.747 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:38:56.624 [main] MMServer - [>>>][>>>] Round: 5
+[INFO ] 2016-10-27 20:38:56.624 [main] MMServer - [>>>][>>>] Guess: 4 3 5 2
+[INFO ] 2016-10-27 20:38:56.624 [main] MMServer - [>>>][>>>] Returning hint: 1 1 2 2
+[INFO ] 2016-10-27 20:38:56.624 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:39:16.703 [main] MMServer - [>>>][>>>] Round: 6
+[INFO ] 2016-10-27 20:39:16.704 [main] MMServer - [>>>][>>>] Guess: 4 2 5 3
+[INFO ] 2016-10-27 20:39:16.704 [main] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 20:39:16.704 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:48:39.656 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:48:39.657 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:48:39.657 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:48:51.002 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:48:51.002 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:48:57.636 [main] MMServer - [>>>][>>>] Game created! (Answer = 6 4 1 4)
+[INFO ] 2016-10-27 20:48:57.636 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:49:03.582 [main] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-27 20:49:03.582 [main] MMServer - [>>>][>>>] Guess: 1 1 1 1
+[INFO ] 2016-10-27 20:49:03.582 [main] MMServer - [>>>][>>>] Returning hint: 1 0 0 0
+[INFO ] 2016-10-27 20:49:03.582 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:49:14.274 [main] MMServer - [>>>][>>>] Round: 2
+[INFO ] 2016-10-27 20:49:14.274 [main] MMServer - [>>>][>>>] Guess: 1 6 1 1
+[INFO ] 2016-10-27 20:49:14.274 [main] MMServer - [>>>][>>>] Returning hint: 1 2 0 0
+[INFO ] 2016-10-27 20:49:14.274 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:49:23.746 [main] MMServer - [>>>][>>>] Round: 3
+[INFO ] 2016-10-27 20:49:23.746 [main] MMServer - [>>>][>>>] Guess: 6 3 1 1
+[INFO ] 2016-10-27 20:49:23.746 [main] MMServer - [>>>][>>>] Returning hint: 1 1 0 0
+[INFO ] 2016-10-27 20:49:23.746 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:49:36.547 [main] MMServer - [>>>][>>>] Round: 4
+[INFO ] 2016-10-27 20:49:36.547 [main] MMServer - [>>>][>>>] Guess: 6 4 1 4
+[INFO ] 2016-10-27 20:49:36.547 [main] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 20:49:36.547 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:52:29.024 [main] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 20:52:29.025 [main] MMServer - [>>>][>>>] Address: 192.168.10.1
+[INFO ] 2016-10-27 20:52:29.025 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:52:37.947 [main] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 20:52:37.947 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:52:45.751 [main] MMServer - [>>>][>>>] Game created! (Answer = 1 1 1 1)
+[INFO ] 2016-10-27 20:52:45.751 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 20:52:50.792 [main] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-27 20:52:50.792 [main] MMServer - [>>>][>>>] Guess: 1 1 4 4
+[INFO ] 2016-10-27 20:52:50.792 [main] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 20:52:50.792 [main] MMServer - [>>>][>>>] 
