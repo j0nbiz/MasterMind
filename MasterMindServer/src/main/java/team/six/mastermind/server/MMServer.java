@@ -8,7 +8,7 @@ import team.six.mastermind.common.MMGame;
 import team.six.mastermind.common.MMPacket;
 
 /**
- * 
+ * This class interacts with the game, and transfers packets to the client.
  * 
  * @author Jonathan Bizier
  */
@@ -26,6 +26,11 @@ public class MMServer {
     private int bytesRcvd;
     private int totalBytesRcvd = 0;
 
+    /**
+     * Default constructor.  Opens the server socket and starts the server.
+     * 
+     * @throws IOException 
+     */
     public MMServer() throws IOException {
         this.serverSocket = new ServerSocket(50000);
 
@@ -33,6 +38,11 @@ public class MMServer {
         this.start();
     }
 
+    /**
+     * Starts the server running on a loop.  Interacts with the game when a client connects.
+     * 
+     * @throws IOException 
+     */
     public void start() throws IOException {
         log.info("Server initialized!");
         log.info("Address: " + InetAddress.getLocalHost().getHostAddress());

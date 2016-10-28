@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package team.six.fxmlcontrollers;
 
 import java.net.URL;
@@ -29,6 +24,11 @@ public class FXMLHowToController implements Initializable {
         // loaded
     }
 
+    /**
+     * Sets the context for the class in place of overloaded constructor.
+     * 
+     * @param stage     The How To Play window's stage
+     */
     public void setContext(Stage stage){
         this.stage = stage;
     }

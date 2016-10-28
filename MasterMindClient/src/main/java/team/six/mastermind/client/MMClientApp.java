@@ -13,12 +13,19 @@ import team.six.mastermind.common.MMConfig;
 import team.six.mastermind.common.MMPacket;
 
 /**
- *
- * @author j0nbiz
+ * This class starts the GUI application.
+ * 
+ * @author Jonathan Bizier
  */
 public class MMClientApp extends Application {
     private MMConfig conf;
     
+    /**
+     * Prepares and loads the GUI.
+     * 
+     * @param stage         The stage for the GUI
+     * @throws Exception 
+     */
     @Override
     public void start(Stage stage) throws Exception {
         this.conf = new MMConfig();
