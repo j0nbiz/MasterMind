@@ -631,3 +631,238 @@
 [INFO ] 2016-10-27 20:52:50.792 [main] MMServer - [>>>][>>>] Guess: 1 1 4 4
 [INFO ] 2016-10-27 20:52:50.792 [main] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
 [INFO ] 2016-10-27 20:52:50.792 [main] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:06:07.639 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 21:06:07.641 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 21:06:07.642 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:11:53.614 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 21:11:53.615 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 21:11:53.616 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:12:09.203 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 21:12:09.213 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:12:20.076 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 1 1 1 1)
+[INFO ] 2016-10-27 21:12:20.076 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:12:27.723 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-27 21:12:27.724 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 1 1 4 4
+[INFO ] 2016-10-27 21:12:27.724 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 21:12:27.724 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:17:51.038 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 21:17:51.040 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 21:17:51.040 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:18:03.845 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 21:18:03.845 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:18:09.644 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 1 1 1 1)
+[INFO ] 2016-10-27 21:18:09.644 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:18:14.788 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-27 21:18:14.788 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 1 1 1 1
+[INFO ] 2016-10-27 21:18:14.792 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 21:18:14.792 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:18:14.835 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 1
+[INFO ] 2016-10-27 21:18:14.835 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 1 1 1 1
+[INFO ] 2016-10-27 21:18:14.836 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 21:18:14.836 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:18:29.940 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 2
+[INFO ] 2016-10-27 21:18:29.940 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 1 1 1 1
+[INFO ] 2016-10-27 21:18:29.942 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 21:18:29.943 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:18:30.692 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 3
+[INFO ] 2016-10-27 21:18:30.692 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 1 1 1 1
+[INFO ] 2016-10-27 21:18:30.693 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 21:18:30.693 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:19:10.492 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 21:19:10.494 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 21:19:10.494 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:19:23.678 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 21:19:23.679 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:19:29.469 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 5 5 5 5)
+[INFO ] 2016-10-27 21:19:29.469 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:19:33.179 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-27 21:19:33.180 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 1 1 1 1
+[INFO ] 2016-10-27 21:19:33.191 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 21:19:33.191 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:21:10.571 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 21:21:10.574 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 21:21:10.574 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:21:23.087 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 21:21:23.087 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:21:28.149 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 5 5 5 5)
+[INFO ] 2016-10-27 21:21:28.150 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:21:34.315 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-27 21:21:34.315 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 6 6 6 6
+[INFO ] 2016-10-27 21:21:34.318 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 21:21:34.320 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:30:01.477 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-27 21:30:01.479 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@4d339552
+[INFO ] 2016-10-27 21:30:01.481 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-27 21:30:01.481 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@345965f2
+[INFO ] 2016-10-27 21:30:01.482 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-27 21:30:01.482 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@429bd883
+[INFO ] 2016-10-27 21:30:01.483 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-27 21:30:01.483 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@4d49af10
+[INFO ] 2016-10-27 21:30:01.484 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-27 21:30:01.484 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@279ad2e3
+[INFO ] 2016-10-27 21:30:01.484 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-27 21:30:01.485 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@58134517
+[INFO ] 2016-10-27 21:30:01.485 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-27 21:30:01.485 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@4450d156
+[INFO ] 2016-10-27 21:30:01.486 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-27 21:30:01.486 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@4461c7e3
+[INFO ] 2016-10-27 21:30:01.487 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-27 21:30:01.487 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-27 21:30:01.491 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-27 21:30:01.491 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@226a82c4
+[INFO ] 2016-10-27 21:30:01.492 [main] MMGame - [>>>][>>>] MMGame: received guess 9 9 9 9
+[INFO ] 2016-10-27 21:30:01.492 [main] MMGame - [>>>][>>>] MMGame: Invalid Guess Error
+[INFO ] 2016-10-27 21:30:02.855 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 21:30:02.858 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 21:30:02.858 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:31:22.703 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 21:31:22.703 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:31:29.789 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 1 1 1 1)
+[INFO ] 2016-10-27 21:31:29.789 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:31:33.252 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-27 21:31:33.252 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 2 2 2 2
+[INFO ] 2016-10-27 21:31:33.253 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-27 21:31:33.253 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: winning combination 2 2 2 2
+[INFO ] 2016-10-27 21:31:33.255 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 21:31:33.255 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:32:28.300 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-27 21:32:28.302 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-27 21:32:28.303 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@b7f23d9
+[INFO ] 2016-10-27 21:32:28.305 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:32:28.305 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-27 21:32:28.305 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@4d339552
+[INFO ] 2016-10-27 21:32:28.306 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:32:28.306 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-27 21:32:28.306 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@f0f2775
+[INFO ] 2016-10-27 21:32:28.307 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:32:28.307 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-27 21:32:28.307 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@5a4aa2f2
+[INFO ] 2016-10-27 21:32:28.308 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:32:28.308 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-27 21:32:28.308 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@6591f517
+[INFO ] 2016-10-27 21:32:28.309 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-27 21:32:28.310 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-27 21:32:28.310 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@345965f2
+[INFO ] 2016-10-27 21:32:28.310 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-27 21:32:28.311 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-27 21:32:28.311 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@429bd883
+[INFO ] 2016-10-27 21:32:28.311 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-27 21:32:28.312 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-27 21:32:28.312 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@4d49af10
+[INFO ] 2016-10-27 21:32:28.312 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-27 21:32:28.312 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-27 21:32:28.313 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-27 21:32:28.317 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:32:28.317 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-27 21:32:28.317 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@351d0846
+[INFO ] 2016-10-27 21:32:28.318 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:32:28.318 [main] MMGame - [>>>][>>>] MMGame: received guess 9 9 9 9
+[INFO ] 2016-10-27 21:32:28.318 [main] MMGame - [>>>][>>>] MMGame: Invalid Guess Error
+[INFO ] 2016-10-27 21:32:30.234 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 21:32:30.236 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 21:32:30.236 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:32:48.553 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 21:32:48.554 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:32:53.327 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 1 1 1 1)
+[INFO ] 2016-10-27 21:32:53.327 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:33:00.563 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-27 21:33:00.563 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 2 2 2 2
+[INFO ] 2016-10-27 21:33:00.563 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: answer 2 2 2 2
+[INFO ] 2016-10-27 21:33:00.564 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-27 21:33:00.564 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: winning combination 2 2 2 2
+[INFO ] 2016-10-27 21:33:00.567 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 1 1 1 1
+[INFO ] 2016-10-27 21:33:00.567 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:40:44.143 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-27 21:40:44.145 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-27 21:40:44.146 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@4d339552
+[INFO ] 2016-10-27 21:40:44.148 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:40:44.148 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-27 21:40:44.148 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@345965f2
+[INFO ] 2016-10-27 21:40:44.149 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:40:44.149 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-27 21:40:44.149 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@429bd883
+[INFO ] 2016-10-27 21:40:44.150 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:40:44.150 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-27 21:40:44.150 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@4d49af10
+[INFO ] 2016-10-27 21:40:44.151 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:40:44.151 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-27 21:40:44.151 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@279ad2e3
+[INFO ] 2016-10-27 21:40:44.152 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-27 21:40:44.152 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-27 21:40:44.152 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@58134517
+[INFO ] 2016-10-27 21:40:44.153 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-27 21:40:44.153 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-27 21:40:44.153 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@4450d156
+[INFO ] 2016-10-27 21:40:44.154 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-27 21:40:44.154 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-27 21:40:44.154 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@4461c7e3
+[INFO ] 2016-10-27 21:40:44.155 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-27 21:40:44.155 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-27 21:40:44.155 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-27 21:40:44.159 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:40:44.159 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-27 21:40:44.159 [main] MMGame - [>>>][>>>] MMGame: giving hint [B@226a82c4
+[INFO ] 2016-10-27 21:40:44.160 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:40:44.160 [main] MMGame - [>>>][>>>] MMGame: received guess 9 9 9 9
+[INFO ] 2016-10-27 21:40:44.160 [main] MMGame - [>>>][>>>] MMGame: Invalid Guess Error
+[INFO ] 2016-10-27 21:40:45.557 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 21:40:45.559 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 21:40:45.559 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:40:57.254 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 21:40:57.254 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:41:03.518 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 1 1 1 1)
+[INFO ] 2016-10-27 21:41:03.518 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:41:06.972 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-27 21:41:06.972 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 2 2 2 2
+[INFO ] 2016-10-27 21:41:06.973 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-27 21:41:06.974 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-27 21:41:06.974 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: giving hint [B@4d166149
+[INFO ] 2016-10-27 21:41:06.975 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 0 0 0 0
+[INFO ] 2016-10-27 21:41:06.975 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:42:22.056 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-27 21:42:22.058 [main] MMGame - [>>>][>>>] MMGame: received guess 2 2 2 2
+[INFO ] 2016-10-27 21:42:22.058 [main] MMGame - [>>>][>>>] MMGame: giving hint 0000
+[INFO ] 2016-10-27 21:42:22.060 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:42:22.060 [main] MMGame - [>>>][>>>] MMGame: received guess 4 1 2 3
+[INFO ] 2016-10-27 21:42:22.061 [main] MMGame - [>>>][>>>] MMGame: giving hint 2222
+[INFO ] 2016-10-27 21:42:22.061 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:42:22.062 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 3 5
+[INFO ] 2016-10-27 21:42:22.062 [main] MMGame - [>>>][>>>] MMGame: giving hint 1110
+[INFO ] 2016-10-27 21:42:22.062 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:42:22.062 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 4 3
+[INFO ] 2016-10-27 21:42:22.063 [main] MMGame - [>>>][>>>] MMGame: giving hint 1122
+[INFO ] 2016-10-27 21:42:22.063 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:42:22.064 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 5 3
+[INFO ] 2016-10-27 21:42:22.064 [main] MMGame - [>>>][>>>] MMGame: giving hint 1120
+[INFO ] 2016-10-27 21:42:22.064 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-27 21:42:22.064 [main] MMGame - [>>>][>>>] MMGame: received guess 1 2 2 2
+[INFO ] 2016-10-27 21:42:22.064 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-27 21:42:22.065 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-27 21:42:22.065 [main] MMGame - [>>>][>>>] MMGame: received guess 2 3 3 3
+[INFO ] 2016-10-27 21:42:22.066 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-27 21:42:22.066 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 2 2
+[INFO ] 2016-10-27 21:42:22.066 [main] MMGame - [>>>][>>>] MMGame: received guess 3 3 1 1
+[INFO ] 2016-10-27 21:42:22.067 [main] MMGame - [>>>][>>>] MMGame: giving hint 2000
+[INFO ] 2016-10-27 21:42:22.067 [main] MMGame - [>>>][>>>] MMGame: answer 1 1 1 1
+[INFO ] 2016-10-27 21:42:22.067 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-27 21:42:22.067 [main] MMGame - [>>>][>>>] MMGame: winning combination 1 1 1 1
+[INFO ] 2016-10-27 21:42:22.071 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:42:22.072 [main] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-27 21:42:22.072 [main] MMGame - [>>>][>>>] MMGame: giving hint 1000
+[INFO ] 2016-10-27 21:42:22.073 [main] MMGame - [>>>][>>>] MMGame: answer 1 2 3 4
+[INFO ] 2016-10-27 21:42:22.073 [main] MMGame - [>>>][>>>] MMGame: received guess 9 9 9 9
+[INFO ] 2016-10-27 21:42:22.073 [main] MMGame - [>>>][>>>] MMGame: Invalid Guess Error
+[INFO ] 2016-10-27 21:42:23.562 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Server initialized!
+[INFO ] 2016-10-27 21:42:23.564 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Address: 192.168.10.102
+[INFO ] 2016-10-27 21:42:23.565 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:42:33.766 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Client connected! Address: 127.0.0.1
+[INFO ] 2016-10-27 21:42:33.766 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:42:39.390 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Game created! (Answer = 3 3 3 3)
+[INFO ] 2016-10-27 21:42:39.391 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 
+[INFO ] 2016-10-27 21:42:42.596 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Round: 0
+[INFO ] 2016-10-27 21:42:42.596 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Guess: 1 1 1 1
+[INFO ] 2016-10-27 21:42:42.597 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: answer 3 3 3 3
+[INFO ] 2016-10-27 21:42:42.597 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: received guess 1 1 1 1
+[INFO ] 2016-10-27 21:42:42.597 [team.six.mastermind.server.MMServerApp.main()] MMGame - [>>>][>>>] MMGame: giving hint 0000
+[INFO ] 2016-10-27 21:42:42.598 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] Returning hint: 0 0 0 0
+[INFO ] 2016-10-27 21:42:42.598 [team.six.mastermind.server.MMServerApp.main()] MMServer - [>>>][>>>] 

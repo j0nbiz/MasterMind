@@ -1,6 +1,8 @@
 package team.six.mastermind.common;
 
 import java.util.Random;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This class provides a MasterMind game using packets.
@@ -10,7 +12,9 @@ import java.util.Random;
 public class MMGame {
 
     private final MMPacket answer;
-    private int round = 1;
+    private int round = 0;
+    // Logger
+    private final Logger log = LoggerFactory.getLogger(getClass().getName());
 
     /**
      * Default constructor. Creates a game with a random answer.
@@ -25,7 +29,15 @@ public class MMGame {
      * @param answer The game's answer
      */
     public MMGame(MMPacket answer) {
-        this.answer = answer;
+        byte[] answerBytes = answer.getBytes();
+        byte[] temp = new byte[4];
+        
+        for (int i = 0; i < answerBytes.length; i++) {
+            temp[i] = answerBytes[i];
+        }
+        
+        this.answer = new MMPacket();
+        this.answer.decode(temp);
     }
 
     /**
@@ -76,9 +88,13 @@ public class MMGame {
         int correctColors;
         int matches;
 
+        log.info("MMGame: answer " + answer.toString());
+        log.info("MMGame: received guess " + guess.toString());
+
         // Verify that the guesses are valid entries
         for (int i = 0; i < guess.getBytes().length; i++) {
             if ((guess.getBytes()[i] < 1) || (guess.getBytes()[i] > 8)) {
+                log.info("MMGame: Invalid Guess Error");
                 throw new IllegalArgumentException("Invalid guess: " + guess.getBytes()[i]);
             }
         }
@@ -88,12 +104,14 @@ public class MMGame {
 
         // Check for good answer
         if (guess.equals(answer)) {
+            log.info("MMGame: winning combination " + guess.toString());
             return new MMPacket((byte) 1, (byte) 1, (byte) 1, (byte) 1);
         }
         
         // Check for end of game
         if (round > 9)
         {
+            log.info("MMGame: Game Over");
             return new MMPacket((byte) 9, (byte) 9, (byte) 9, (byte) 9);
         }
 
@@ -118,6 +136,7 @@ public class MMGame {
             }
         }
 
+        log.info("MMGame: giving hint " + hints[0] + hints[1] + hints[2] + hints[3]);
         return new MMPacket(hints[0], hints[1], hints[2], hints[3]);
     }
 
