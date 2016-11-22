@@ -1,50 +1,49 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package team.six.mastermind.server;
 
 import java.io.IOException;
-import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
-import java.util.logging.Level;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import team.six.mastermind.common.MMGame;
 import team.six.mastermind.common.MMPacket;
 
 /**
+ * This class handles packet receiving and interaction with client
  *
- * @author 1141669
+ * @author Erika Bourque
+ * @author Jonathan Bizier
  */
 public class GameThread implements Runnable {
 
-    private Socket client;
+    // Logger
     private final Logger log = LoggerFactory.getLogger(getClass().getName());
-    private ServerSocket serverSocket;
+
+    // Client variables
+    private Socket client;
+    private MMGame game;
     private static final int BUFFSIZE = 4; // Packet holds 4 components
     private byte[] byteBuffer = new byte[BUFFSIZE];
     private int bytesRcvd;
     private int totalBytesRcvd = 0;
-    MMGame game;
 
     public GameThread(Socket client) {
         this.client = client;
     }
 
     public void run() {
-        // Create packet to interpret response
-        MMPacket packet = new MMPacket();
-        for (;;) {
+        try {
+            // Create packet to interpret response
+            MMPacket packet = new MMPacket();
 
-            try {
+            for (;;) {
+
+                // Get new packets
                 receivePackets();
                 // Fill current packet
                 packet.decode(byteBuffer);
 
-                // Interpret packets
+                // If no game started
                 if (game == null) {
                     if (packet.equals(new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0))) {
                         // New game with random answer
@@ -61,16 +60,14 @@ public class GameThread implements Runnable {
                     for (byte comp : new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0).getBytes()) {
                         client.getOutputStream().write(comp); // Send all packet components to client
                     }
-                } else if (packet.equals(new MMPacket((byte) 10, (byte) 10, (byte) 10, (byte) 10))) {
-                    // Check for game restart request
-                    // Send back succes request and allow client loop to continue
+                } else // Check for end game request
+                if (packet.equals(new MMPacket((byte) 10, (byte) 10, (byte) 10, (byte) 10))) {
                     for (byte comp : new MMPacket((byte) 0, (byte) 0, (byte) 0, (byte) 0).getBytes()) {
-                        client.getOutputStream().write(comp); // Send all packet components to client
+                        client.getOutputStream().write(comp); // Send confirmation
                     }
 
-                    // Disconnect
-                    client.close(); // Close old client
-
+                    // close client
+                    client.close();
                 } else {
                     // Interpret incoming packet
                     log.info("Round: " + game.getRound());
@@ -86,23 +83,16 @@ public class GameThread implements Runnable {
                     log.info("Returning hint: " + hint.toString());
                     log.info("");
                 }
-            } catch (SocketException e) {
-                try {
-                    client.close(); // Close old client
-                    log.info("Client connection closed.");
-                    break;
-                } catch (IOException ex) {
-                    java.util.logging.Logger.getLogger(GameThread.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            } catch (IOException ex) {
-                java.util.logging.Logger.getLogger(GameThread.class.getName()).log(Level.SEVERE, null, ex);
-                break;
             }
+        } catch (SocketException e) {
+            log.warn("Connection lost!");
+        } catch (IOException e) {
+            log.warn("Could not write packet components!");
         }
     }
 
     /**
-     * This waits and receives packets
+     * Method that waits and receives packets
      *
      * @throws SocketException, IOException
      */
@@ -110,7 +100,8 @@ public class GameThread implements Runnable {
         while (totalBytesRcvd < byteBuffer.length) {
             // Check for client disconnection and throw exception
             if ((bytesRcvd = client.getInputStream().read(byteBuffer, totalBytesRcvd, byteBuffer.length - totalBytesRcvd)) == -1) {
-                throw new SocketException("Connection lost!");
+                client.close(); // Close client since connection is lost
+                throw new SocketException("Connection lost!"); // Throw new exception
             }
             totalBytesRcvd += bytesRcvd;
         }
